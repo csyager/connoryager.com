@@ -1,0 +1,112 @@
+<DOCTYPE! html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>www.connoryager.com</title>
+<meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
+<meta encoding="utf-8">
+
+<script>
+	function screenResize(){
+		var width = $(window).width();
+		if(width>860px){
+			document.getElementById('dropdown').style.display = 'none';
+			document.getElementById('nav').style.display = 'block';
+		}
+		else {
+			document.getElementById('nav').style.display = 'none';
+			document.getElementById('dropdown').style.display = 'block';
+		}
+	}
+
+	window.onresize = screenResize;
+</script>
+ 
+</head>
+
+<body>
+<header>
+<h1>Connor Yager</h1>
+</header>
+<div id="nav">
+<table width="100%">
+<tr>
+<td><a href="index.htm" class="button">Home</a></td>
+<td><a href="about.htm" class="button">About Connor</a></td>
+<td><a href="blog.htm" class="button">Blog</a></td>
+<td><a href="photos.htm" class="button">Photos</a></td>
+<td><a href="http://www.yagerwebpagedesign.com/" class="button">Yager Webpage Design</a></td>
+</tr>
+</table>
+</div>
+<br>
+<div class = "dropdown">
+	
+	
+	<button onclick = "buttonClicked()">Navigation</button>
+	<script>
+
+		function buttonClicked() {	
+			var opacity = document.getElementById('myDropdown').style.display;
+			if (opacity == "block"){
+				document.getElementById('myDropdown').style.display = 'none';
+			}
+			if (opacity == "none") {
+				document.getElementById('myDropdown').style.display = 'block';
+			}
+	
+		}
+
+	</script>
+	<div id = "myDropdown" class="dropdown-content" style="display:none">
+		<a href="index.htm">Home</a><br>
+		<a href="about.htm">About Connor</a><br>
+		<a href="blog.htm">Blog</a><br>
+		<a href="photos.htm">Photos</a><br>
+		<a href="http://www.yagerwebpagedesign.com/">Yager Webpage Design</a><br>
+	</div>
+</div>
+<br>
+<hr>
+<br>
+<script src = "js/timeofday.js"></script>
+<div id="welcome" style="width: 80%; margin: 0 auto">
+<p><b>Welcome to my blog!</b>  I created this site using basic HTML coding as a place where I can record my thoughts, as well as post anything that I find funny or intriguing.  These posts are not meant to stir controversy in any way, although I am a supporter of thoughtful discussion, so if you find any of my thoughts interesting, or want to discuss them further, please feel free to leave a comment.  Thanks for visiting, and please feel free to explore my site!</p>
+</div>
+<div id="images" style="width: 80%; margin: 0 auto">
+<table>
+<tr style="text-align:center">
+<td>
+<img src="images/IMG_0084.JPG">
+</td>
+<td>
+<img src="images/IMG_1453.JPG">
+</td>
+<td>
+<img src="images/IMG_3713.JPG">
+</td>
+<td>
+<img src="images/IMG_3675 - Copy.JPG">
+</td>
+</tr>
+<tr style="text-align:center">
+<td>
+<img src="images/IMG_1448.JPG">
+</td>
+<td>
+<img src="images/IMG_1451.JPG">
+</td>
+<td>
+<img src="images/IMG_2560.JPG">
+</td>
+<td>
+<img src="images/IMG_3701.JPG">
+</td>
+</tr>
+</table>
+
+</div>
+
+
+</body>
+</html>
