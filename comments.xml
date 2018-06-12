@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<comments>
+	<post id="1">
+		<comment id="001">
+			<user>Connor</user>
+			<date>05/21/2018</date>
+			<email>connoryager4@gmail.com</email>
+			<text>This is my comment.</text>
+		</comment>
+	</post>
+</comments>

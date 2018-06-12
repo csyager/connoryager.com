@@ -1,109 +1,102 @@
 <DOCTYPE! html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>www.connoryager.com</title>
+
+<title>Home - www.connoryager.com</title>
 <meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
 <meta encoding="utf-8">
 
-<script>
-	function screenResize(){
-		var width = $(window).width();
-		if(width>860px){
-			document.getElementById('dropdown').style.display = 'none';
-			document.getElementById('nav').style.display = 'block';
-		}
-		else {
-			document.getElementById('nav').style.display = 'none';
-			document.getElementById('dropdown').style.display = 'block';
-		}
-	}
-
-	window.onresize = screenResize;
-</script>
- 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/secondary.css">
 </head>
 
 <body>
 <header>
 <h1>Connor Yager</h1>
 </header>
-<div id="nav">
-<table width="100%">
-<tr>
-<td><a href="index.htm" class="button">Home</a></td>
-<td><a href="about.htm" class="button">About Connor</a></td>
-<td><a href="blog.htm" class="button">Blog</a></td>
-<td><a href="photos.htm" class="button">Photos</a></td>
-<td><a href="http://www.yagerwebpagedesign.com/" class="button">Yager Webpage Design</a></td>
-</tr>
-</table>
-</div>
-<br>
-<div class = "dropdown">
-	
-	
-	<button onclick = "buttonClicked()">Navigation</button>
-	<script>
-
-		function buttonClicked() {	
-			var opacity = document.getElementById('myDropdown').style.display;
-			if (opacity == "block"){
-				document.getElementById('myDropdown').style.display = 'none';
-			}
-			if (opacity == "none") {
-				document.getElementById('myDropdown').style.display = 'block';
-			}
-	
-		}
-
-	</script>
-	<div id = "myDropdown" class="dropdown-content" style="display:none">
-		<a href="index.htm">Home</a><br>
-		<a href="about.htm">About Connor</a><br>
-		<a href="blog.htm">Blog</a><br>
-		<a href="photos.htm">Photos</a><br>
-		<a href="http://www.yagerwebpagedesign.com/">Yager Webpage Design</a><br>
+<nav class = "navbar navbar-default regular">
+	<div class = "container-fluid">
+		<div class = "col" align="center">
+			<a href = "index.htm" class = "btn">Home</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "about.htm" class = "btn">About Connor</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "blog.php" class = "btn">Blog</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "photos.htm" class = "btn">Photos</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "http://www.yagerwebpagedesign.com/" class = "btn">Yager Webpage Design</a>
+		</div>
 	</div>
-</div>
-<br>
-<hr>
+</nav>
+<nav class=" navbar navbar-default droptop">
+      
+	<div class="container-fluid">
+        <div class="container btn col-sm-2 col-2" data-toggle="collapse" data-target="#dropper" onclick="makeX(this)" style="float: right;">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropper" class="collapse">
+              <a href="index.htm" class="btn" style="font-size: 20px;">Home</a><br>
+              <a href="about.htm" class="btn" style="font-size: 20px;">About Connor</a><br>
+              <a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
+              <a href="photos.htm" class="btn" style="font-size: 20px;">Photos</a><br>
+              <a href="http://www.yagerwebpagedesign.com/" class="btn" style="font-size: 20px">Yager Webpage Design</a>
+        </div>
+    </div>
+</nav>
+
+<!--resize navbar js -->
+<script type="text/javascript">
+  //source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
+  function makeX(x) {
+    x.classList.toggle("change");
+}
+</script>
 <br>
 <script src = "js/timeofday.js"></script>
-<div id="welcome" style="width: 80%; margin: 0 auto">
-<p><b>Welcome to my blog!</b>  I created this site using basic HTML coding as a place where I can record my thoughts, as well as post anything that I find funny or intriguing.  These posts are not meant to stir controversy in any way, although I am a supporter of thoughtful discussion, so if you find any of my thoughts interesting, or want to discuss them further, please feel free to leave a comment.  Thanks for visiting, and please feel free to explore my site!</p>
+<div id="welcome" style="width: 80%; margin: 0 auto" class="transbox ">
+<p><b>Welcome to my website!</b>  I created this site using basic HTML coding, bootstrap CSS, javascript, and servlet as a place where I can record my thoughts, as well as post anything that I find funny or intriguing.  These posts are not meant to stir controversy in any way, although I am a supporter of thoughtful discussion, so if you find any of my thoughts interesting, or want to discuss them further, please feel free to leave a comment.  Thanks for visiting, and please feel free to explore my site!</p>
 </div>
+<br>
 <div id="images" style="width: 80%; margin: 0 auto">
-<table>
-<tr style="text-align:center">
-<td>
-<img src="images/IMG_0084.JPG">
-</td>
-<td>
-<img src="images/IMG_1453.JPG">
-</td>
-<td>
-<img src="images/IMG_3713.JPG">
-</td>
-<td>
-<img src="images/IMG_3675 - Copy.JPG">
-</td>
-</tr>
-<tr style="text-align:center">
-<td>
-<img src="images/IMG_1448.JPG">
-</td>
-<td>
-<img src="images/IMG_1451.JPG">
-</td>
-<td>
-<img src="images/IMG_2560.JPG">
-</td>
-<td>
-<img src="images/IMG_3701.JPG">
-</td>
-</tr>
-</table>
+	<div class="row align-items-center">
+		<div class="col-sm">
+			<img src="images/IMG_0084.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+		<div class="col-sm">
+			<img src="images/IMG_1453.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+		<div class="col-sm">
+			<img src="images/IMG_3713.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+		<div class="col-sm">
+			<img src="images/IMG_3675.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+	</div>
+	<br>
+	<div class="row align-items-center">
+		<div class="col-sm">
+			<img src="images/IMG_1448.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+		<div class="col-sm">
+			<img src="images/IMG_1451.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+		<div class="col-sm">
+			<img src="images/IMG_2560.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+		<div class="col-sm">
+			<img src="images/IMG_3701.JPG" class="img-thumbnail" style="width:100%">
+		</div>
+	</div>
 
 </div>
 
