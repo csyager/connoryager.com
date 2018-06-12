@@ -1,5 +1,7 @@
 <?php 
-$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password'); 
+$username = file_get_contents("username.txt");
+$password = file_get_contents("password.txt");
+$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', $username, $password); 
 if (!$link) { 
     die('Could not connect: ' . mysql_error()); 
 } 
