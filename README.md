@@ -8,7 +8,7 @@ CONTENTS
 * FRONTEND
 * BACKEND
 * IMPROVEMENTS 
-* LICENSE
+* LICENSING
 
 INTRODUCTION
 ------------
@@ -29,3 +29,33 @@ The frontend work of the site is very simplistic.  The main pages of the site ar
 BACKEND
 -------
 The post_comment.php file is used for much of the backend of the blog page, in coordination with mySQL databases provided through iPage.  The post_comment.php file establishes a connection to this database,  
+
+IMPROVEMENTS
+------------
+* In future releases, I hope to include a blacklist feature so IP address that have caused problems in the comment section of my blog posts can be blocked from commenting for a period of time.  I may additionally include a form that the user can fill out that will allow them to appeal their case, or make a case for a shortened "sentence."
+
+* My code is difficult to read in places, and hopefully will be more thoroughly commented shortly.
+
+* In a future release there will be more ways to contact me through the site, so that private responses to my work can be more efficiently handled without the need to contact me directly.
+
+LICENSING
+---------
+Copyright (c) 2018 Connor Yager
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
