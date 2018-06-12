@@ -1,0 +1,317 @@
+<DOCTYPE! html>
+<html>
+<head>
+
+<title>Blog - www.connoryager.com</title>
+<meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
+<meta encoding="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/secondary.css">
+<!--read more/read less toggle-->
+<script>
+	function change(id){
+		var elem = document.getElementById(id);
+		if(elem.innerHTML == 'Read More')
+			elem.innerHTML = 'Read Less';
+		else
+			elem.innerHTML = 'Read More';
+	}
+	function commentChange(id){
+		var elem = document.getElementById(id);
+		if(elem.innerHTML=='View More Comments')
+			elem.innerHTML = 'View Fewer Comments';
+		else
+			elem.innerHTML = 'View More Comments';
+	}
+</script>
+
+</head>
+
+<body>
+<header>
+<h1>Connor Yager</h1>
+</header>
+<nav class = "navbar navbar-default regular">
+	<div class = "container-fluid">
+		<div class = "col" align="center">
+			<a href = "index.htm" class = "btn">Home</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "about.htm" class = "btn">About Connor</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "blog.php" class = "btn">Blog</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "photos.htm" class = "btn">Photos</a>
+		</div>
+		<div class = "col" align="center">
+			<a href = "http://www.yagerwebpagedesign.com/" class = "btn">Yager Webpage Design</a>
+		</div>
+	</div>
+</nav>
+<nav class=" navbar navbar-default droptop">
+      
+	<div class="container-fluid">
+        <div class="container btn col-sm-2 col-2" data-toggle="collapse" data-target="#dropper" onclick="makeX(this)" style="float: right;">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="dropper" class="collapse">
+              <a href="index.htm" class="btn" style="font-size: 20px;">Home</a><br>
+              <a href="about.htm" class="btn" style="font-size: 20px;">About Connor</a><br>
+              <a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
+              <a href="photos.htm" class="btn" style="font-size: 20px;">Photos</a><br>
+              <a href="http://www.yagerwebpagedesign.com/" class="btn" style="font-size: 20px">Yager Webpage Design</a>
+        </div>
+    </div>
+</nav>
+
+<!--resize navbar js -->
+<script type="text/javascript">
+  //source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
+  function makeX(x) {
+    x.classList.toggle("change");
+}
+</script>
+<h1>Blog</h1>
+
+<div class="card mb-4">
+	<img class="card-img-top" src="images/xtuple.jpg">
+	<div class="card-body">
+		<h2 class="card-title">xTuple</h2>
+		<p class="card-text"><a href="https://github.com/csyager/Junk-Search-Extension">Click here to view Github</a></p>
+		<p class="card-text">Over the last summer and winter break, I spent a few months working as an intern at xTuple, a small software company in Norfolk, VA.  xTuple produces an open-source ERP (enterprise resource management) software, which it markets to small-businesses.  ERPs provided an interface for distribution and manufacturing companies to track merchandise and distribution.  xTuple's ERP also comes with a built in CRM (customer resource manager), which allows the user company to track customer information, as well as communcations with that customer for thousands and thousands of individual customers.</p>
+		<div id="blog4" class="collapse in">
+			<p class="card-text">xTuple uses a PostgreSQL database to manage and store data.  xTuple uses their own software to run their company, and my task was to develop an extension for their desktop client that would allow the user to eliminate large groups of contacts at once based on an email address pattern.  The point of this was to eliminate groups of contacts that use junk email addresses to sign into their website.  This project involved creating a user interface using Qt and Javascript, and adding backend functionality using SQL.</p>
+			<p class="card-text">My final tool had several functions.  The first was a simple query function based on a regular expression supplied by the user.  The results would populate a table at the bottom of the tool.  The user would be able to select individual contacts in the table, or use a "Select All" button to highlight all entries.  The user could then delete the selected contacts or move them into a separate SQL table to mark them for review.  Once the user was finished making changes, they would press a "Finalize" button, which commits the changes on the database.</p>
+			<p class="card-text">I learned a lot through my time at xTuple, both as a developer and as what it meant to work at an engineering firm.  This summer I will be returning to work there as a paid member of the team, and will be working on a new project, which I hope will also challenge me to improve as a programmer.</p><br>
+
+		</div>
+		<button id="button4" type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog4" onclick="change(this.id)">Read More</button>
+		<br>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment4">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+			<input action="blog.php#commentSection4" name="submit4" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+			if(isset($_POST["submit4"])){ $post = '4';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection4">
+			<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='4' ORDER BY (date) DESC LIMIT 0, 3");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+			?>
+			<div id="expandedComments4" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='4' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand4" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments4" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+
+	</div>
+	<div class="card-footer text-muted">
+		Posted on May 21st, 2018 by Connor Yager
+	</div>
+</div>
+
+
+<div class="card mb-4">
+	<img class="card-img-top" src="images/textbook1.PNG">
+	<div class="card-body">
+		<h2 class="card-title">CS 4640 Project</h2>
+		<p class="card-text"><a href="https://github.com/csyager/cs4640" target="_blank">Click here to view Github</a></p>
+		<p class="card-text">In our Programming Languages for Web Development class, my parter Kyle Leisure and I spent the semester learning the ins and out of web dev.  We explored many languages, starting with HTML and CSS and working into Javascript, PHP, Java Servlet, JSP, XML, Ajax, and AngularJS.  </p>
+		<div id="blog3" class="collapse in">
+			<p class="card-text">Our project was a peer-to-peer textbook sales site specifically for UVA students.  The site featured the ability to create an account and sign in, then create listings for textbooks.  The site also featured a side-by-side comparison of prices at the UVA bookstore, to help the user find the best price, as well as the ability to rate other users to ensure fair treatment by all users of the site.  The link to our source code can be found above.</p><br>
+			
+		</div>
+		<button id="button3" type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog3" onclick="change(this.id)" aria-expanded="true" aria-controls="blog2">Read More</button>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment3">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+			<input name="submit3" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+			if(isset($_POST["submit3"])){ $post = '3';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection3">
+			<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='3' ORDER BY (date) DESC LIMIT 0, 3");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+			?>
+			<div id="expandedComments3" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='3' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand3" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments3" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+		Posted on May 19th, 2018 by Connor Yager
+	</div>
+</div>
+
+<div class="card mb-4">
+	<img class="card-img-top" src="images/nola.jpg">
+	<div class="card-body">
+		<h2 class="card-title">NOLA Lacrosse Tournament</h2>
+		<p class="card-text">I spent this past weekend at a lacrosse tournament in New Orleans.  "The Big Easy" was unlike anything I've ever seen.  While I truly don't understand how anything can possibly get done there, as the city appears to be just one big party, it was a very meaningful experience.  The city structure reminded me in a way of my trip to Europe last summer.  Something about the narrow, crowded roads and the culture that is present there reminded me that the United States actually does have its own culture, even if it isn't nearly as old as that of Europe.  This adventure definitely changed my perspective.</p>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment2">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+			<input name="submit2" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+			if(isset($_POST["submit2"])){ $post = '2';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection2">
+			<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='2' ORDER BY (date) DESC LIMIT 0, 3");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+			?>
+			<div id="expandedComments2" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='2' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand2" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments2" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+		</div>
+	<div class="card-footer text-muted">
+		Posted on February 13th, 2017 by Connor Yager
+	</div>
+</div>
+
+<div class="card mb-4">
+	<img class="card-img-top" src ="images/cozmo.PNG">
+	<div class="card-body">
+		<h2 class="card-title">Winter Break</h2>
+		<p class="card-text">Thus far, it's been a relaxing break from my studies at UVA.  I think that it is a well-timed month off from all the activity of college life.  I've taken time to visit with friends from high school and to catch up with them on the new lives that we've been leading.  It's also given me a chance to focus on working on this website and other programming and coding projects that I wouldn't normally have time for in my busy schedule.</p>
+		
+		<div id="blog1" class="collapse in">
+			<p>My only complaint is that things can get a little boring when you have nothing to do, and I really miss my friends from college and look forward to getting back together with them.</p>
+			<p>Winter break has also been a good opportunity for me to find internship opportunities this summer, and to complete my resume and applications for the open positions.  I want to fill my summer with something productive, be it work or an internship or studies.  I want to be a part of an engineering firm to get experience in what working in those fields would be like, both to help with future work opportunities as well as to just get a better grasp of what I want to be doing in the future.  I think that these experiences would be valuable in determining what path I want to take in my studies and in pursuing a career, and I hope that I will have the opportunity to pursue these opportunities in the summer.</p>
+		</div>
+		<button id="button1" type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog1" onclick="change(this.id)">Read More</button>
+		<br>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment1">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+			<input name="submit1" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+			if(isset($_POST["submit1"])){ $post = '1';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection4">
+			<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='1' ORDER BY (date) DESC LIMIT 0, 3");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+			?>
+			<div id="expandedComments1" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='1' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand1" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments1" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+	</div>
+	<div class="card-footer text-muted">
+		Posted on December 28th, 2016 by Connor Yager
+	</div>
+</div>
+</body>
+</html>
