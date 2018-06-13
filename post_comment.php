@@ -12,9 +12,17 @@ mysql_select_db(cyager_comments);
 $user = $_POST['user'];
 $email = $_POST['email'];
 $comment = $_POST['comment'];
-if($comment!=''&&!(strpos($blacklist, $ip))){
-	$query = mysql_query("INSERT INTO comments (post, user, email, comment) VALUES ($post, '$user', '$email', '$comment')");
-} 
+
+#this code replaces single-quotes with ascii codes
+$user = str_replace("'", "&#39;", $user);
+$comment = str_replace("'", "&#39;", $comment);
+if(strpos($blacklist, $ip)){
+	$blacklisted = true;
+} else { $blacklisted = false; }
+
+if($comment!=''&&!$blacklisted){
+	$query = mysql_query("INSERT INTO comments (post, user, email, comment, ip) VALUES ($post, '$user', '$email', '$comment', '$ip')");
+}
 while($row = mysql_fetch_assoc($query)){
 	print_r($row);
 }

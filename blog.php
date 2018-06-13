@@ -88,6 +88,8 @@
 <!--where blacklisting errors will be displayed -->
 <div class="transbox-red" id="blacklistError"></div>
 
+
+
 <div class="card mb-4">
 	<img class="card-img-top" src="images/leadership.jpg">
 	<div class="card-body">
@@ -434,9 +436,20 @@
 </div>
 
 <footer class="footer" style="background-color: grey">
-	<div class="container">
-		<span style="color: black"><?php echo "IP Address:  " . getUserIP();?></span>
+	<div class="container" style="margin-left: 0px">
+		<span style="color: black" id="ip"><?php echo "IP Address:  " . getUserIP();?></span>
 	</div>
 </footer>
+<script>
+	var blacklisted = <?php echo json_encode($blacklisted); ?>;
+	var phpIP = "<?php echo getUserIP(); ?>";
+	if(blacklisted){
+		alert("Attention.  IP Address " + phpIP + " has been blacklisted.  You will not be able to leave comments.");
+		document.getElementById("blacklistError").innerHTML="<p><b>Attention:</b>  IP address " + phpIP + " has been blacklisted.  You will not be able to leave comments.  To appeal your blacklisting, <a href=\"blacklistAppeal.htm\" class=\"normal\" target =\"_blank\">click here.</a></p>";
+	} else {
+		document.getElementById("blacklistError").style="visibility: hidden";
+	}
+
+</script>
 </body>
 </html>

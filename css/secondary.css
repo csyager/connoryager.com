@@ -29,6 +29,14 @@ nav {
 	height: auto;	
 	width: auto;
 }
+a.normal:link{
+	color: white;
+	text-decoration: underline;
+}
+a.normal:hover{
+	background-color: transparent;
+	font-weight: bold;
+}
 a:link {
 	color: black;
 	text-align: center;
@@ -164,6 +172,7 @@ div.img-thumbnail img {
 	left:0;
 	bottom:0;
 	width:100%;
+	text-align: left;
 }
 
 #respond {
