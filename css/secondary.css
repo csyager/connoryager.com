@@ -29,6 +29,14 @@ nav {
 	height: auto;	
 	width: auto;
 }
+a.normal:link{
+	color: white;
+	text-decoration: underline;
+}
+a.normal:hover{
+	background-color: transparent;
+	font-weight: bold;
+}
 a:link {
 	color: black;
 	text-align: center;
@@ -106,6 +114,7 @@ table{
 }
 /*transbox makes a transparent blue box for text*/
 div.transbox{
+	color: white;
 	margin: 30px;
 	background-color: #00008099;
 	border: 1px solid black;
@@ -115,11 +124,22 @@ div.transbox p, h2, table {
 }
 /*a variant on transbox with orange instead of blue */
 div.transbox-orange{
+	color: white;
 	margin: 30px;
 	background-color: #e69138CC;
 	border: 1px solid black;
 }
 div.transbox-orange p, h2, table{
+	margin: 2.5%;
+}
+/*transbox that is red, for displaying errors */
+div.transbox-red{
+	color: white;
+	margin: 30px;
+	background-color: #ff000099;
+	border: 1px solid black;
+}
+div.transbox-red p, h2, table{
 	margin: 2.5%;
 }
 div.card {
@@ -146,6 +166,13 @@ div.img-thumbnail p {
 }
 div.img-thumbnail img {
 	min-width: 100%;
+}
+.footer{
+	position: fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	text-align: left;
 }
 
 #respond {

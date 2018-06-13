@@ -1,3 +1,4 @@
 #gitignore file
 username.txt
 password.txt
+blacklist.txt
