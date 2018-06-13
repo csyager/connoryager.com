@@ -18,9 +18,16 @@ The site is far from perfect, and more improvements will hopefully be coming wit
 
 VERSION HISTORY
 ---------------
-__Version 1.0.0__ - First upload.  This version was the result of self-taught HTML and nothing else, so JavaScript or any other programming language was notably missing.
+
+__Vesion 2.0.1__ - Slight formatting fixes, detailed below:
+
+* Spacing fixed on images not fitting into their bezels properly.
+* Resolved issue where blog posts were initially being shown in full instead of collapsed.
+* Fixed coloring of headings that are included in another div tag.
 
 __Version 2.0.0__ - First major re-release.  This version was the result of further learning done in my CS 4640 class at UVA, which was focused on programming languages for web development.  Includes much improved interfaces and asthetic design through the use of bootstrap CSS, as well as PHP to SQL backend allowing for more user interaction with the site.
+
+__Version 1.0.0__ - First upload.  This version was the result of self-taught HTML and nothing else, so JavaScript or any other programming language was notably missing.
 
 FRONTEND
 --------

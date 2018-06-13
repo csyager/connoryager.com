@@ -30,6 +30,9 @@
 	}
 </script>
 
+<!--includes php to get IP address, used in footer and in postComment.php-->
+<?php include 'getIP.php';?>
+
 </head>
 
 <body>
@@ -81,6 +84,9 @@
 }
 </script>
 <h1>Blog</h1>
+
+<!--where blacklisting errors will be displayed -->
+<div class="transbox-red" id="blacklistError"></div>
 
 <div class="card mb-4">
 	<img class="card-img-top" src="images/leadership.jpg">
@@ -426,5 +432,11 @@
 		Posted on December 28th, 2016 by Connor Yager
 	</div>
 </div>
+
+<footer class="footer" style="background-color: grey">
+	<div class="container">
+		<span style="color: black"><?php echo "IP Address:  " . getUserIP();?></span>
+	</div>
+</footer>
 </body>
 </html>
