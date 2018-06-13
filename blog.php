@@ -83,6 +83,119 @@
 <h1>Blog</h1>
 
 <div class="card mb-4">
+	<img class="card-img-top" src="images/leadership.jpg">
+	<div class="card-body">
+		<h2 class="card-title">9th Grade Leadership Lab</h2>
+		<p class="card-text">Last week, I worked as a counselor on a leadership retreat for rising 10th graders at Norfolk Academy.  73 students attended the trip to learn how to become better leaders and to prepare for the challenges of being in the upper school.  Myself and five other alumni were selected to work alongside faculty members to facilitate the trip.</p>
+		<div id="blog6" class="collapse in">
+			<p class="card-text">Initially, I was skeptical of the trip, as the challenges seemed incredibly daunting, and perhaps too intense for a group of middle schoolers to handle.  However, I was incredibly blessed to receive the best 13 students I could have asked for.  Each one of them was incredibly mature in their own way, and I found that more often than not, they were teaching me about leadership, and not the other way around!  Over the course of the 7 days I was with them, I got to know them very well, and by the end of the week all of the students felt comfortable confiding in each other things that they would tell few others, if anyone at all.  In my mind, this made the trip a success, as this class will now have a shared experience that will connect them throughout their time in the upper school, and into life beyond that.  I'm very proud of the students and how far they came, and I can say that I myself was changed by my experiences with them for the better.</p><br>
+		</div>
+		<button id="button6" type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog6" onclick="change(this.id)">Read More</button>
+		<br>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment6">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+			<input action="blog.php#commentSection6" name="submit6" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+			if(isset($_POST["submit6"])){ $post = '6';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection6">
+			<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='6' ORDER BY (date) DESC LIMIT 0, 3");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+			?>
+			<div id="expandedComments6" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='6' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand6" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments6" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+
+	</div>
+	<div class="card-footer text-muted">
+		Posted on June 12th, 2018 by Connor Yager
+	</div>
+</div>
+
+
+<div class="card mb-4">
+	<img class="card-img-top" src="images/laxchamp.jpg">
+	<div class="card-body">
+		<h2 class="card-title">NCLL National Champions!</h2>
+		<p class="card-text">A few weeks ago, the UVA Men's Club Lacrosse team travelled to the US Naval Academy to compete for the club national championship.  After a close game with Penn State in the quarterfinals and another with Vermont in the semis, the team advanced to the championship game against Navy.  Playing the home team wasn't easy, but led by a strong defense, efficient offense, and some clutch saves by Carter Malkus in goal, the Hoos took the trophy home.  Carter and Grant Melchers, who played goalie during the quarterfinals and semifinals, were the co-MVPs of the tournament.</p>
+		<br>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment5">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+			<input action="blog.php#commentSection5" name="submit5" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+			if(isset($_POST["submit5"])){ $post = '5';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection5">
+			<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='5' ORDER BY (date) DESC LIMIT 0, 3");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+			?>
+			<div id="expandedComments5" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='5' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand5" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments5" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+
+	</div>
+	<div class="card-footer text-muted">
+		Posted on June 12th, 2018 by Connor Yager
+	</div>
+</div>
+
+<div class="card mb-4">
 	<img class="card-img-top" src="images/xtuple.jpg">
 	<div class="card-body">
 		<h2 class="card-title">xTuple</h2>

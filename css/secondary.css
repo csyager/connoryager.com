@@ -147,6 +147,9 @@ div.img-thumbnail p {
 	color: black;
 	text-align: left;
 }
+div.img-thumbnail img {
+	min-width: 100%;
+}
 
 #respond {
 	margin: 40px;
