@@ -60,9 +60,6 @@ input[type=text] {
 	-webkit-transition: width .4s ease-in-out;
 	transition: width .4s ease-in-out;
 }
-h1, h2, h3, h4, h5, h6, p {
-	color: white;
-}
 table{
 	color: white;
 	background-color: #e69138ff;
