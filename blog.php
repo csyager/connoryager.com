@@ -439,7 +439,7 @@
 	<div class="container" style="margin-left: 0px; margin-right: 0px; max-width: 100%">
 		<span style="color: black" id="ip"><?php echo "IP Address:  " . getUserIP();?></span>
 		<span style="float: right">
-			<a href="reportForm.php" class="normal" style="color: black"><img src="images/redflag.png" style="width: 21.5px; height: 21.5px" target="_blank">Report a comment as inappropriate</a>
+			<a href="reportForm.php" class="normal" style="color: black" target="_blank"><img src="images/redflag.png" style="width: 21.5px; height: 21.5px">Report a comment as inappropriate</a>
 		</span>
 	</div>
 </footer>
@@ -448,7 +448,7 @@
 	var phpIP = "<?php echo getUserIP(); ?>";
 	if(blacklisted){
 		alert("Attention.  IP Address " + phpIP + " has been blacklisted.  You will not be able to leave comments.");
-		document.getElementById("blacklistError").innerHTML="<p><b>Attention:</b>  IP address " + phpIP + " has been blacklisted.  You will not be able to leave comments.  To appeal your blacklisting, <a href=\"blacklistAppeal.htm\" class=\"normal\" target =\"_blank\">click here.</a></p>";
+		document.getElementById("blacklistError").innerHTML="<p><b>Attention:</b>  IP address " + phpIP + " has been blacklisted.  You will not be able to leave comments.  To appeal your blacklisting, <a href=\"appealForm.php\" class=\"normal\" target =\"_blank\">click here.</a></p>";
 	} else {
 		document.getElementById("blacklistError").style="visibility: hidden";
 	}
