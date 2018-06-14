@@ -93,7 +93,7 @@
 		<p>Thank you for making an effort to contribute to the site.  We're sorry that you found a comment worth reporting here!  Please fill out the form below, and we will address this problem as quickly as possible.  Thank you again for your contribution.</p>
 	</div>
 	<form method="post" action="reportForm.php" style="color: white; margin-left: 20px">
-		<input type="text" name="name" id="name" placeholder="Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded">
+		<input type="text" name="name" id="name" placeholder="Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
 		<input type="email" name="email" id="email" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded">
 		<p>What post did you see the comment on?</p>
 		<input type="text" name="post" id="post" placeholder="Post Title" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded">
