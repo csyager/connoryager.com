@@ -439,7 +439,7 @@
 	<div class="container" style="margin-left: 0px; margin-right: 0px; max-width: 100%">
 		<span style="color: black" id="ip"><?php echo "IP Address:  " . getUserIP();?></span>
 		<span style="float: right">
-			<a href="reportForm.php" class="normal" style="color: black"><img src="images/redflag.png" style="width: 21.5px; height: 21.5px">Report a comment as inappropriate</a>
+			<a href="reportForm.php" class="normal" style="color: black"><img src="images/redflag.png" style="width: 21.5px; height: 21.5px" target="_blank">Report a comment as inappropriate</a>
 		</span>
 	</div>
 </footer>
