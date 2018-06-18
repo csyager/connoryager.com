@@ -19,7 +19,15 @@ The site is far from perfect, and more improvements will hopefully be coming wit
 VERSION HISTORY
 ---------------
 
-__Vesion 2.0.1__ - Slight formatting fixes, detailed below:
+__Version 2.1.0__ - This release adds a few new functions to the blog page:
+
+* Blacklist: Users can now be blacklisted by the site admin by their IP address. Blacklisting can be a result of posting comments on the site that are hateful, not accepting, or otherwise inappropriate for my blog.
+Once blacklisted, the user has the option to appeal their blacklisting through a form, which will be submitted to me for review.
+* A "Report Comment" button has been added to right side of the footer. This feature allows the user to fill out a form that reports a comment as inappropriate for any reason, which will be submitted to me for review.
+* Added a link to the GitHub on the index page
+* Small fixes around the site
+
+__Version 2.0.1__ - Slight formatting fixes, detailed below:
 
 * Spacing fixed on images not fitting into their bezels properly.
 * Resolved issue where blog posts were initially being shown in full instead of collapsed.
