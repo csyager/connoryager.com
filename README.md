@@ -39,8 +39,6 @@ The post_comment.php file is used for much of the backend of the blog page, in c
 
 IMPROVEMENTS
 ------------
-* In future releases, I hope to include a blacklist feature so IP address that have caused problems in the comment section of my blog posts can be blocked from commenting for a period of time.  I may additionally include a form that the user can fill out that will allow them to appeal their case, or make a case for a shortened "sentence."
-
 * My code is difficult to read in places, and hopefully will be more thoroughly commented shortly.
 
 * In a future release there will be more ways to contact me through the site, so that private responses to my work can be more efficiently handled without the need to contact me directly.
