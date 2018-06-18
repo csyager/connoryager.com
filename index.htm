@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="css/secondary.css">
 </head>
 
-<body>
+<body onresize="pageChange()" onload="pageChange()">
 <header>
 <h1>Connor Yager</h1>
 </header>
@@ -68,7 +68,36 @@
 <p><a href="https://github.com/csyager/connoryager.com" class="normal" style="color: white" target="_blank">Click here to view my source code on GitHub</a></p>
 </div>
 <br>
-<div id="images" style="width: 80%; margin: 0 auto">
+<script type="text/javascript">
+	function pageChange(){
+		var twitter = document.getElementById("twitter");
+		var images = document.getElementById("images");
+		if (innerWidth<850){
+			twitter.style.float="";
+			twitter.style.width="80%";
+			images.style.width="90%";
+			images.style.float="";
+			twitter.style.margin="0px 10% 300px 10%";
+			images.style.margin="0px 5% 0px 5%";
+		}
+		if (innerWidth>=850){
+			twitter.style.float="left";
+			twitter.style.width="25%";
+			twitter.style.margin="0px 0px 0px 20px";
+			images.style.margin="0px 20px 0px 0px";
+			images.style.width="70%";
+			images.style.float="right";
+		}
+	}
+	
+</script>
+<div class="container" style="float: left; width: 25%; height: 500px; margin-left: 20px" id="twitter">
+<div>
+	<a class="twitter-timeline" data-height="744" href="https://twitter.com/connor_yager?ref_src=twsrc%5Etfw">Tweets by connor_yager</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+<div class="container" id="images" style="width: 70%; margin-right: 20px; float: right">
+<div>
 	<div class="row align-items-center">
 		<div class="col-sm">
 			<img src="images/IMG_0084.JPG" class="img-thumbnail" style="width:100%">
@@ -99,6 +128,7 @@
 		</div>
 	</div>
 
+</div>
 </div>
 
 
