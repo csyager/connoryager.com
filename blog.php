@@ -2,93 +2,150 @@
 <html>
 <head>
 
-<title>Blog - www.connoryager.com</title>
-<meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
-<meta encoding="utf-8">
+	<title>Blog - www.connoryager.com</title>
+	<meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
+	<meta encoding="utf-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/secondary.css">
-<!--read more/read less toggle-->
-<script>
-	function change(id){
-		var elem = document.getElementById(id);
-		if(elem.innerHTML == 'Read More')
-			elem.innerHTML = 'Read Less';
-		else
-			elem.innerHTML = 'Read More';
-	}
-	function commentChange(id){
-		var elem = document.getElementById(id);
-		if(elem.innerHTML=='View More Comments')
-			elem.innerHTML = 'View Fewer Comments';
-		else
-			elem.innerHTML = 'View More Comments';
-	}
-</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/secondary.css">
+	<!--read more/read less toggle-->
+	<script>
+		function change(id){
+			var elem = document.getElementById(id);
+			if(elem.innerHTML == 'Read More')
+				elem.innerHTML = 'Read Less';
+			else
+				elem.innerHTML = 'Read More';
+		}
+		function commentChange(id){
+			var elem = document.getElementById(id);
+			if(elem.innerHTML=='View More Comments')
+				elem.innerHTML = 'View Fewer Comments';
+			else
+				elem.innerHTML = 'View More Comments';
+		}
+	</script>
 
-<!--includes php to get IP address, used in footer and in postComment.php-->
-<?php include 'getIP.php';?>
+	<!--includes php to get IP address, used in footer and in postComment.php-->
+	<?php include 'getIP.php';?>
 
 </head>
 
 <body>
-<header>
-<h1>Connor Yager</h1>
-</header>
-<nav class = "navbar navbar-default regular">
-	<div class = "container-fluid">
-		<div class = "col" align="center">
-			<a href = "index.htm" class = "btn">Home</a>
+	<header>
+		<h1>Connor Yager</h1>
+	</header>
+	<nav class = "navbar navbar-default regular">
+		<div class = "container-fluid">
+			<div class = "col" align="center">
+				<a href = "index.htm" class = "btn">Home</a>
+			</div>
+			<div class = "col" align="center">
+				<a href = "about.htm" class = "btn">About Connor</a>
+			</div>
+			<div class = "col" align="center">
+				<a href = "blog.php" class = "btn">Blog</a>
+			</div>
+			<div class = "col" align="center">
+				<a href = "photos.htm" class = "btn">Photos</a>
+			</div>
+			<div class = "col" align="center">
+				<a href = "http://www.yagerwebpagedesign.com/" class = "btn">Yager Webpage Design</a>
+			</div>
 		</div>
-		<div class = "col" align="center">
-			<a href = "about.htm" class = "btn">About Connor</a>
-		</div>
-		<div class = "col" align="center">
-			<a href = "blog.php" class = "btn">Blog</a>
-		</div>
-		<div class = "col" align="center">
-			<a href = "photos.htm" class = "btn">Photos</a>
-		</div>
-		<div class = "col" align="center">
-			<a href = "http://www.yagerwebpagedesign.com/" class = "btn">Yager Webpage Design</a>
-		</div>
-	</div>
-</nav>
-<nav class=" navbar navbar-default droptop">
-      
-	<div class="container-fluid">
-        <div class="container btn col-sm-2 col-2" data-toggle="collapse" data-target="#dropper" onclick="makeX(this)" style="float: right;">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-        <div id="dropper" class="collapse">
-              <a href="index.htm" class="btn" style="font-size: 20px;">Home</a><br>
-              <a href="about.htm" class="btn" style="font-size: 20px;">About Connor</a><br>
-              <a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
-              <a href="photos.htm" class="btn" style="font-size: 20px;">Photos</a><br>
-              <a href="http://www.yagerwebpagedesign.com/" class="btn" style="font-size: 20px">Yager Webpage Design</a>
-        </div>
-    </div>
-</nav>
+	</nav>
+	<nav class=" navbar navbar-default droptop">
 
-<!--resize navbar js -->
-<script type="text/javascript">
+		<div class="container-fluid">
+			<div class="container btn col-sm-2 col-2" data-toggle="collapse" data-target="#dropper" onclick="makeX(this)" style="float: right;">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<div id="dropper" class="collapse">
+				<a href="index.htm" class="btn" style="font-size: 20px;">Home</a><br>
+				<a href="about.htm" class="btn" style="font-size: 20px;">About Connor</a><br>
+				<a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
+				<a href="photos.htm" class="btn" style="font-size: 20px;">Photos</a><br>
+				<a href="http://www.yagerwebpagedesign.com/" class="btn" style="font-size: 20px">Yager Webpage Design</a>
+			</div>
+		</div>
+	</nav>
+
+	<!--resize navbar js -->
+	<script type="text/javascript">
   //source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
   function makeX(x) {
-    x.classList.toggle("change");
-}
+  	x.classList.toggle("change");
+  }
 </script>
 <h1>Blog</h1>
 
 <!--where blacklisting errors will be displayed -->
 <div class="transbox-red" id="blacklistError"></div>
 
+<div class="card mb-4">
+	<img class="card-img-top" src="images/gradpic2[rotated].jpg">
+	<div class="card-body">
+		<h2 class="card-title">Chase's Graduation</h2>
+		<p class="card-text">My younger brother Chase just finished his senior year at Norfolk Academy, and had his final exercises last week.  Our grandpa Gordon (or as we call him, Papa) from Nashville and our grandmother Wendy from Santa Barbara were in attendance.  Chase recieved the William Henry Thompson Loyall Award for excellence in English, as well as the Alexander G. Kiehl Award for excellence as a Student-Athlete.  Chase will be attending Amherst College in Amherst, Massachussetts next year, where he will be playing lacrosse.</p>
+		<div id="blog7" class="collapse in">
+			<p class="card-text">Chase had an exceptional senior year, serving as Senior Class President, captain of the soccer, basketball, and lacrosse teams, a second-team All-State soccer player, a first-team All-State lacrosse player, first-team All-Conference in both soccer and lacrosse, as well as graduating with high honors.  We're all very proud of my little brother, and can't wait to see what he does in the next phase of his life!</p>
+		</div>
+		<button id="button7" type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog7" onclick="change(this.id)">Read More</button>
+		<br>
+		<br>
+		<h3>Leave a Comment</h3>
+		<form action="" method="post" id="comment7">
+			<input type="text" name="user" id="user" value="" placeholder="User Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+			<input type="email" name="email" value="" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; margin-bottom: 5px" class="rounded"><br>
+			<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
 
+			<input action="blog.php#commentSection7" name="submit7" type="submit" value="Submit Comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px" class="btn btn-info"/>
+		</form>
+		<h3>Comments</h3>
+		<?php
+		if(isset($_POST["submit7"])){ $post = '7';}
+		?>
+		<?php include 'post_comment.php';?>
+		<div id="commentSection7">
+			<?php
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='7' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
+			?>
+			<div id="expandedComments6" class="collapse in">
+				<?php
+				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+				if (!$link) {
+					die('Could not connect: ' . mysql_error());
+				}
+				mysql_select_db(cyager_comments);
+				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='7' ORDER BY (date) DESC LIMIT 3, 18446744073709551615");
+				while($row= mysql_fetch_assoc($query)){
+					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+				}
+				?>
+			</div>
+			<button id="expand7" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments7" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+		</div>
+
+	</div>
+	<div class="card-footer text-muted">
+		Posted on June 18th, 2018 by Connor Yager
+	</div>
+</div>
 
 <div class="card mb-4">
 	<img class="card-img-top" src="images/leadership.jpg">
@@ -111,20 +168,20 @@
 		</form>
 		<h3>Comments</h3>
 		<?php
-			if(isset($_POST["submit6"])){ $post = '6';}
+		if(isset($_POST["submit6"])){ $post = '6';}
 		?>
 		<?php include 'post_comment.php';?>
 		<div id="commentSection6">
 			<?php
-				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
-				if (!$link) {
-					die('Could not connect: ' . mysql_error());
-				}
-				mysql_select_db(cyager_comments);
-				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='6' ORDER BY (date) DESC LIMIT 0, 3");
-				while($row= mysql_fetch_assoc($query)){
-					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
-				}
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='6' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
 			?>
 			<div id="expandedComments6" class="collapse in">
 				<?php
@@ -166,20 +223,20 @@
 		</form>
 		<h3>Comments</h3>
 		<?php
-			if(isset($_POST["submit5"])){ $post = '5';}
+		if(isset($_POST["submit5"])){ $post = '5';}
 		?>
 		<?php include 'post_comment.php';?>
 		<div id="commentSection5">
 			<?php
-				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
-				if (!$link) {
-					die('Could not connect: ' . mysql_error());
-				}
-				mysql_select_db(cyager_comments);
-				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='5' ORDER BY (date) DESC LIMIT 0, 3");
-				while($row= mysql_fetch_assoc($query)){
-					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
-				}
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='5' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
 			?>
 			<div id="expandedComments5" class="collapse in">
 				<?php
@@ -228,20 +285,20 @@
 		</form>
 		<h3>Comments</h3>
 		<?php
-			if(isset($_POST["submit4"])){ $post = '4';}
+		if(isset($_POST["submit4"])){ $post = '4';}
 		?>
 		<?php include 'post_comment.php';?>
 		<div id="commentSection4">
 			<?php
-				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
-				if (!$link) {
-					die('Could not connect: ' . mysql_error());
-				}
-				mysql_select_db(cyager_comments);
-				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='4' ORDER BY (date) DESC LIMIT 0, 3");
-				while($row= mysql_fetch_assoc($query)){
-					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
-				}
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='4' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
 			?>
 			<div id="expandedComments4" class="collapse in">
 				<?php
@@ -288,20 +345,20 @@
 		</form>
 		<h3>Comments</h3>
 		<?php
-			if(isset($_POST["submit3"])){ $post = '3';}
+		if(isset($_POST["submit3"])){ $post = '3';}
 		?>
 		<?php include 'post_comment.php';?>
 		<div id="commentSection3">
 			<?php
-				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
-				if (!$link) {
-					die('Could not connect: ' . mysql_error());
-				}
-				mysql_select_db(cyager_comments);
-				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='3' ORDER BY (date) DESC LIMIT 0, 3");
-				while($row= mysql_fetch_assoc($query)){
-					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
-				}
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='3' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
 			?>
 			<div id="expandedComments3" class="collapse in">
 				<?php
@@ -340,20 +397,20 @@
 		</form>
 		<h3>Comments</h3>
 		<?php
-			if(isset($_POST["submit2"])){ $post = '2';}
+		if(isset($_POST["submit2"])){ $post = '2';}
 		?>
 		<?php include 'post_comment.php';?>
 		<div id="commentSection2">
 			<?php
-				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
-				if (!$link) {
-					die('Could not connect: ' . mysql_error());
-				}
-				mysql_select_db(cyager_comments);
-				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='2' ORDER BY (date) DESC LIMIT 0, 3");
-				while($row= mysql_fetch_assoc($query)){
-					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
-				}
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='2' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
 			?>
 			<div id="expandedComments2" class="collapse in">
 				<?php
@@ -370,7 +427,7 @@
 			</div>
 			<button id="expand2" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments2" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
 		</div>
-		</div>
+	</div>
 	<div class="card-footer text-muted">
 		Posted on February 13th, 2017 by Connor Yager
 	</div>
@@ -399,20 +456,20 @@
 		</form>
 		<h3>Comments</h3>
 		<?php
-			if(isset($_POST["submit1"])){ $post = '1';}
+		if(isset($_POST["submit1"])){ $post = '1';}
 		?>
 		<?php include 'post_comment.php';?>
 		<div id="commentSection4">
 			<?php
-				$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
-				if (!$link) {
-					die('Could not connect: ' . mysql_error());
-				}
-				mysql_select_db(cyager_comments);
-				$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='1' ORDER BY (date) DESC LIMIT 0, 3");
-				while($row= mysql_fetch_assoc($query)){
-					echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
-				}
+			$link = mysql_connect('yagerwebpagedesignco.ipagemysql.com', 'cyager', 'password');
+			if (!$link) {
+				die('Could not connect: ' . mysql_error());
+			}
+			mysql_select_db(cyager_comments);
+			$query = mysql_query("SELECT user, date, comment FROM comments WHERE post='1' ORDER BY (date) DESC LIMIT 0, 3");
+			while($row= mysql_fetch_assoc($query)){
+				echo $row['user'] . " at " . $row['date'] . ": <br>" . $row['comment']. "<hr>";
+			}
 			?>
 			<div id="expandedComments1" class="collapse in">
 				<?php
@@ -435,12 +492,22 @@
 	</div>
 </div>
 
-<footer class="footer" style="background-color: grey">
+<footer class="footer" style="background-color: grey; bottom: 24">
 	<div class="container" style="margin-left: 0px; margin-right: 0px; max-width: 100%">
 		<span style="color: black" id="ip"><?php echo "IP Address:  " . getUserIP();?></span>
 		<span style="float: right">
 			<a href="reportForm.php" class="normal" style="color: black" target="_blank"><img src="images/redflag.png" style="width: 21.5px; height: 21.5px">Report a comment as inappropriate</a>
 		</span>
+	</div>
+</footer>
+<footer class="footer" style="background-color: black">
+	<div class="container text-center">
+		<a href="https://www.facebook.com/connor.yager.3"  target="_blank" class="normal"><i class="fa fa-facebook" style="color: orange"></i></a>&nbsp;
+		<a href="https://twitter.com/connor_yager" target="_blank" class="normal"><i class="fa fa-twitter" style="color: orange"></i></a>&nbsp;
+		<a href="https://www.linkedin.com/in/connor-yager-61b804128/" target="_blank" class="normal"><i class="fa fa-linkedin" style="color: orange"></i></a>&nbsp;
+		<a href="https://www.instagram.com/connor_yager/" target="_blank" class="normal"><i class="fa fa-instagram" style="color: orange"></i></a>&nbsp;
+		<a href="https://github.com/csyager" target="_blank" class="normal"><i class="fa fa-github" style="color: orange"></i></a>&nbsp;
+
 	</div>
 </footer>
 <script>

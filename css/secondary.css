@@ -53,6 +53,15 @@ a:hover {
 a:active {
 	color: #e69138ff;
 }
+a.footerLink:link{
+	color: orange;
+}
+a.footerLink:hover{
+	font-weight: bold;
+}
+a.footerLink:visited {
+	color: orange;
+}
 input[type=text] {
 	width: 100%;
 	box-sizing: border-box;
