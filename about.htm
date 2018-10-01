@@ -1,10 +1,14 @@
 <DOCTYPE! html>
 <html>
 <head>
-
 	<title>About Me - www.connoryager.com</title>
 	<meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
 	<meta encoding="utf-8">
+
+	<script src="js/mobile.js"></script>
+	<script type="text/javascript">
+		window.onload(checkMobile());
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -34,7 +38,7 @@
 				<a href = "photos.htm" class = "btn">Photos</a>
 			</div>
 			<div class = "col" align="center">
-				<a href = "http://www.yagerwebpagedesign.com/" class = "btn">Yager Webpage Design</a>
+				<a onclick="setCookie('mobile', 'true', 1); window.location.href = 'mobile.index.htm'" class="btn">Mobile Site</a>
 			</div>
 		</div>
 	</nav>
@@ -51,7 +55,7 @@
 				<a href="about.htm" class="btn" style="font-size: 20px;">About Connor</a><br>
 				<a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
 				<a href="photos.htm" class="btn" style="font-size: 20px;">Photos</a><br>
-				<a href="http://www.yagerwebpagedesign.com/" class="btn" style="font-size: 20px">Yager Webpage Design</a>
+				<a onclick="setCookie('mobile', 'true', 1); window.location.href = 'mobile.index.htm'" class="btn" style="font-size: 20px;">Mobile Site</a>
 			</div>
 		</div>
 	</nav>
@@ -72,7 +76,7 @@
 <div id = "contact" style="width: 30%; float: right; border: all;" class="transbox">
 	<h2 style="margin: 5%; color: white">Contact</h2>
 	<p style="margin: 5%">To contact me, use any of the methods listed below:</p>
-	<table border="1px" class="table-hover" style="margin: 5%">
+	<table border="1px" class="table-hover" style="min-width: 0px">
 		<tr>
 			<td>Phone</td>
 			<td>(703) 336-3822</td>
@@ -91,6 +95,7 @@
 	<h2 style="margin-left: 30px">Education</h2>
 	<div class="transbox-orange">
 		<p>Currently, I am a third year student at the University of Virginia's School of Engineering and Applied Sciences.  I attended Norfolk Academy in Norfolk, VA for my sophomore, junior, and senior years, where I graduated with high honors.  I spent my freshman year at W.T. Woodson High School in Fairfax, VA.</p>
+		<p>At UVA, I am pursuing a bachelor's of science degree in computer science, and a minor in physics.  I have taken classes in engineering and design, entrepreneurship, physics, chemistry, calculus (differential, integral, and multivariate), differential equations, electricity and magnetism, theory of computation, information theory, digital logic design, data structures, web development, discrete mathematics, software development algorithms, computer architecture, and more.</p>
 	</div>
 
 	<br>
@@ -98,21 +103,20 @@
 		<div class="img-thumbnail" style="width: 165px; margin: 50px">
 			<a href="college_transcript.pdf" target="_blank">
 				<img src="images/uva_logo.png">
-				<div class="caption" style="text-align: left">
-					<p style="color: #e69138ff">Click here to view my unofficial college transcript (updated through Jan. 2016).</p>
-				</div>
 			</a>
 		</div>
 		<div class="img-thumbnail" style="width: 250px; height: 200px; margin-top: 50px">
 			<a href="transcript.pdf" target="_blank">
 				<img src="images/na_logo.png">
-				<div class="caption" style="text-align: left;">
-					<p style="color: #e69138ff">Click here to view my high school transcript.</p>
-				</div>
 			</a>
 		</div>
 	</div>
 	<br>
+	<h2 style="margin-left: 30px">Extracurriculars</h2>
+	<div class="transbox-orange">
+		<p>Aside from my schoolwork at UVA, I participate in several extra-curricular activities.  Firstly, I am an executive member of the Alpha Mu chapter of the Delta Sigma Phi fraternity.  Rushing as a first year, I wasn't certain that I wanted to join a fraternity.  However, after finding a group of men who I truly admire and respect, I decided to join.  Delta Sig has made my college experience truly enjoyable, and I am thankful for everything that they have provided for me.  I now serve on the executive council, where I participate in the decision-making that goes into the day-to-day operations of our chapter.</p>
+		<p>Secondly, I am a member of the Men's Club Lacrosse team.  In high school, I was interested in playing lacrosse at the varsity level, but found that in order to play I would have to make sacrifices in the kind of education that I wanted to pursue.  Playing club at UVA has been a great compromise, and has given me a way to pursue my passion in a fun and competitive environment, while still studying what I love.  I now serve as team treasurer, where I manage our cash-flow from team dues and work with the school to secure funding for our team.</p>
+	</div>
 	<h2 style="margin-left: 30px">Family</h2>
 	<div class="transbox">
 		<p>While not at school I live with my parents, Kim and Craig Yager, and my younger brother Chase.  Both of my parents were pilots in the United States Navy, where my dad retired at the rank of Captain and my mom acheived the rank of Lieutenant Commander.  Prior to her time in the military, my mom majored in graphic design at Auburn University, and worked as a graphic designer for several years.  My dad earned a pre-law bachelor's degree at the University of California at Santa Barbara, and while serving in the military earned an M.B.A. at National University.  Following their time in the Navy, my mother worked as a commercial airline pilot for Delta Airlines, and my father worked for a company based in Virginia Beach, VA, called Check-6, which specifically hires former aviators to teach safety management to oil rig workers.  Currently, my dad works at the corporate level at 7-Eleven.</p>
