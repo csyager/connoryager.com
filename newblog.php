@@ -63,8 +63,9 @@
 						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].
 						  '</button>
 						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="profile.php">Profile</a>
+						    <a class="dropdown-item" href="#">Profile</a>
 						    <a class="dropdown-item" href="clearsession.php">Logout</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
 						  </div>
 						</div>';
 
@@ -94,8 +95,9 @@
 						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].
 						  '</button>
 						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="profile.php">Profile</a>
+						    <a class="dropdown-item" href="#">Profile</a>
 						    <a class="dropdown-item" href="clearsession.php">Logout</a>
+						    <a class="dropdown-item" href="#">Something else here</a>
 						  </div>
 						</div>';
 
@@ -120,8 +122,6 @@
 <div class="transbox-red" id="blacklistError"></div>
 <div class="container" style="max-width: none; width: 100%;">
 	<div class="card-columns">
-
-		<a id="post7"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/gradpic2[rotated].jpg">
 			<div class="card-body">
@@ -168,7 +168,6 @@
 			</div>
 		</div>
 
-		<a id="post6"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/leadership.jpg">
 			<div class="card-body">
@@ -214,7 +213,7 @@
 			</div>
 		</div>
 
-		<a id="post5"></a>
+
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/laxchamp.jpg">
 			<div class="card-body">
@@ -255,7 +254,6 @@
 			</div>
 		</div>
 
-		<a id="post4"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/xtuple.jpg">
 			<div class="card-body">
@@ -305,7 +303,7 @@
 			</div>
 		</div>
 
-		<a id="post3"></a>
+
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/textbook1.PNG">
 			<div class="card-body">
@@ -351,7 +349,6 @@
 			</div>
 		</div>
 
-		<a id="post2"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/nola.jpg">
 			<div class="card-body">
@@ -391,7 +388,6 @@
 			</div>
 		</div>
 
-		<a id="post1"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src ="images/cozmo.PNG">
 			<div class="card-body">
@@ -462,10 +458,10 @@
 </footer>
 <script>
 	var blacklisted = <?php echo json_encode($blacklisted); ?>;
-	var user = "<?php echo $_SESSION['user'] ?>";
+	var phpIP = "<?php echo getUserIP(); ?>";
 	if(blacklisted){
-		alert("Attention.  User " + user + " has been blacklisted.  You will not be able to leave comments.");
-		document.getElementById("blacklistError").innerHTML="<p><b>Attention:</b>  User " + user + " has been blacklisted.  You will not be able to leave comments.  To appeal your blacklisting, <a href=\"appealForm.php\" class=\"normal\" target =\"_blank\">click here.</a></p>";
+		alert("Attention.  IP Address " + phpIP + " has been blacklisted.  You will not be able to leave comments.");
+		document.getElementById("blacklistError").innerHTML="<p><b>Attention:</b>  IP address " + phpIP + " has been blacklisted.  You will not be able to leave comments.  To appeal your blacklisting, <a href=\"appealForm.php\" class=\"normal\" target =\"_blank\">click here.</a></p>";
 	} else {
 		document.getElementById("blacklistError").style="visibility: hidden";
 	}

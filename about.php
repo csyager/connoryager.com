@@ -1,6 +1,9 @@
 <DOCTYPE! html>
 <html>
 <head>
+	<?php
+		session_start();
+	 ?>
 	<title>About Me - www.connoryager.com</title>
 	<meta name="keywords" content="Yager, Connor, Webpage, Design, yager, connor, webpage, design, create, make website, web, page, site, html, teach, tutor, learn, HTML, coding, code, tags, attributes, tag, attribute, help, me, Craig, craig, chase, Chase, Kim, kim, Kimberly, kimberly">
 	<meta encoding="utf-8">
@@ -26,19 +29,33 @@
 	<nav class = "navbar navbar-default regular">
 		<div class = "container-fluid">
 			<div class = "col" align="center">
-				<a href = "index.htm" class = "btn">Home</a>
+				<a href = "index.php" class = "btn">Home</a>
 			</div>
 			<div class = "col" align="center">
-				<a href = "about.htm" class = "btn">About Connor</a>
+				<a href = "about.php" class = "btn">About Connor</a>
 			</div>
 			<div class = "col" align="center">
 				<a href = "blog.php" class = "btn">Blog</a>
 			</div>
 			<div class = "col" align="center">
-				<a href = "photos.htm" class = "btn">Photos</a>
+				<a href = "photos.php" class = "btn">Photos</a>
 			</div>
 			<div class = "col" align="center">
-				<a onclick="setCookie('mobile', 'true', 1); window.location.href = 'mobile.index.htm'" class="btn">Mobile Site</a>
+				<?php
+					if (isset($_SESSION['user'])){
+						echo '<div class="dropdown">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].
+						  '</button>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="profile.php">Profile</a>
+						    <a class="dropdown-item" href="clearsession.php">Logout</a>
+						  </div>
+						</div>';
+
+					} else {
+						echo '<a href="login.php" class="btn">Login</a>';
+					}
+					?>
 			</div>
 		</div>
 	</nav>
@@ -51,11 +68,25 @@
 				<div class="bar3"></div>
 			</div>
 			<div id="dropper" class="collapse">
-				<a href="index.htm" class="btn" style="font-size: 20px;">Home</a><br>
-				<a href="about.htm" class="btn" style="font-size: 20px;">About Connor</a><br>
+				<a href="index.php" class="btn" style="font-size: 20px;">Home</a><br>
+				<a href="about.php" class="btn" style="font-size: 20px;">About Connor</a><br>
 				<a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
-				<a href="photos.htm" class="btn" style="font-size: 20px;">Photos</a><br>
-				<a onclick="setCookie('mobile', 'true', 1); window.location.href = 'mobile.index.htm'" class="btn" style="font-size: 20px;">Mobile Site</a>
+				<a href="photos.php" class="btn" style="font-size: 20px;">Photos</a><br>
+				<?php
+					if (isset($_SESSION['user'])){
+						echo '<div class="dropdown">
+						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].
+						  '</button>
+						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="profile.php">Profile</a>
+						    <a class="dropdown-item" href="clearsession.php">Logout</a>
+						  </div>
+						</div>';
+
+					} else {
+						echo '<a href="login.php" class="btn" style="font-size:20px;">Login</a>';
+					}
+					?>
 			</div>
 		</div>
 	</nav>
