@@ -121,6 +121,51 @@
 <div class="container" style="max-width: none; width: 100%;">
 	<div class="card-columns">
 
+		<a id="post8"></a>
+		<div class="card mb-4">
+			<img class="card-img-top" src="images/network.jpg">
+			<div class="card-body">
+				<h2 class="card-title">Home Server</h2>
+				<p class="card-text">To keep myself busy during winter break this year, I decided to spend some time repurposing my old laptop as a home server, which I could use to store files, run programs, and perhaps most importantly host this website!  I've never done anything related to computer networking before, so this was a bit of a learning experience, with lots of trial and error.  I got rid of the old operating system on the laptop and loaded up an Ubuntu distro, and then set it up to run Apache2, PHP, and MySQL.  I set up an ssh client so I can make changes from anywhere, and configured the router to forward all HTTP and HTTPS requests through to the server.  A few changes to this site's PHP has got all of the SQL queries running through the server, so now all comments and user data can be stored there.  The main motivation for doing this was that I could downgrade from the more expensive web host that I had been using, and can now pay for a really barebones service, since most of the bells and whistles that I had been paying for were now being hosted on my home server.</p>
+				<div id = "blog8" class="collapse in">
+					<p class="card-text">This project is certainly not perfect yet, and I have a lot of optimizations that I'm still trying to figure out.  However my hope is that I can continue to move towards self-sufficience, and that this will allow me to put more cool features in the site.  In fact, restructuring in this way is what got me thinking about the new user profile system, which I believe is far superior to the old system of leaving comments.  Hopefully updates and fixes will continue rolling out for this system, so please keep letting me know where you encounter problems using the "Report a Bug" feature.  Thanks for the support as the site and my development skills continue to improve, and hopefully I'll keep finding improvements that push what I know about web dev.</p>
+				</div>
+				<button id="button8" type="button" class="btn btn-info" data-toggle="collapse" data-target="#blog8" onclick="change(this.id)">Read More</button>
+				<br>
+				<br>
+				<h3>Leave a Comment</h3>
+				<form action="" method="post" id="comment8">
+					<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+					<?php
+						if(isset($_SESSION['user'])){
+							echo "<input action=\"blog.php\" name=\"submit8\" type=\"submit\" value=\"Submit Comment\" style=\"text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px\" class=\"btn btn-info\"/>";
+            } else {
+              echo '<input onclick = "window.location.href = \'login.php\'" value = "Login to leave a comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 200px; font-size: 14px" class="btn btn-info">';
+            }
+          ?>
+				</form>
+				<h3>Comments</h3>
+				<?php
+				if(isset($_POST["submit8"])){
+					$post = '8';
+					include 'post_comment.php';
+				}
+				?>
+				<div id="commentSection8">
+					<?php $disp_post = 8; ?>
+					<?php include 'fetch_comment.php';?>
+					<div id="expandedComments8" class="collapse in">
+						<?php include 'fetch_extras.php';?>
+					</div>
+					<button id="expand8" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments8" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+				</div>
+
+			</div>
+			<div class="card-footer text-muted">
+				Posted on January 21st, 2019 by Connor Yager
+			</div>
+		</div>
 		<a id="post7"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/gradpic2[rotated].jpg">
