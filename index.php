@@ -19,7 +19,7 @@
 
 <body onresize="pageChange()" onload="pageChange()">
 	<header>
-		<h1>Connor Yager</h1>
+		<h1>Test</h1>
 	</header>
 	<nav class = "navbar navbar-default regular">
 		<div class = "container-fluid">
