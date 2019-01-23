@@ -127,7 +127,7 @@
 		<p>Please fill out this form to appeal your case to be removed from the blacklist, which will allow you to comment on blog posts again.</p>
 	</div>
 	<form method="post" action="appealForm.php" style="color: white; margin-left: 20px">
-		<input type="text" name="name" id="name" placeholder="Name" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
+		<input type="text" name="name" id="name" placeholder="Username" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded"><br>
 		<input type="email" name="email" id="email" placeholder="Email" required="required" style="width: 538px; height: 30px; text-indent: 5px; padding: 0px; margin-bottom: 5px" class="rounded">
 		<p>Why are you submitting this form?</p>
 		<input type="radio" name="reason" value="unfairly blacklisted" onclick="hide()"> I believe my blacklisting was unfair or uncalled for.<br>
