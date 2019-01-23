@@ -7,7 +7,7 @@ CONTENTS
 * VERSION HISTORY
 * FRONTEND
 * BACKEND
-* IMPROVEMENTS 
+* IMPROVEMENTS
 * LICENSING
 
 INTRODUCTION
@@ -48,8 +48,6 @@ The post_comment.php file is used for much of the backend of the blog page, in c
 IMPROVEMENTS
 ------------
 * My code is difficult to read in places, and hopefully will be more thoroughly commented shortly.
-
-* In a future release there will be more ways to contact me through the site, so that private responses to my work can be more efficiently handled without the need to contact me directly.
 
 LICENSING
 ---------
