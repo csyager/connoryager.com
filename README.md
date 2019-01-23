@@ -12,12 +12,18 @@ CONTENTS
 
 INTRODUCTION
 ------------
-This repository contains the source code for my personal website, www.connoryager.com.  The site is written using a plain-text editor, and is the result of several years of cummulative improvements (therefore my coding may be a little sloppy in places).  The site is hosted on iPage, which I also use for the backend database work.  
+This repository contains the source code for my personal website, www.connoryager.com.  The site is written using a plain-text editor, and is the result of several years of cummulative improvements (therefore my coding may be a little sloppy in places).  Previously, the site was hosted on iPage, which I also used for the backend database work. I recently repurposed an old laptop into a home server, and set it up with a mySQL database, PHP, and an Apache2 virtual host, so now everything is hosted on my own system.
 
 The site is far from perfect, and more improvements will hopefully be coming with each new version release.  These future changes are detailed in the "Improvements" section of this document.
 
 VERSION HISTORY
 ---------------
+
+__Version 2.2.0__ - This version offers new functionality for the site, designed to simplify the user experience, and offer a more stable approach to commenting on the blog page. This includes:
+
+* Login functionality: users now create user accounts to leave comments on the blog page.
+* Profile page: along with the user account comes a personal profile page, which will display all of the user's comments, as well as their profile information, which can be edited as the user pleases.
+* User blacklisting: while our previous method of enforcing the blacklist relied on IP addresses, which are easily changed to avoid the block, our new method relies on the user profile, so a user can be blocked from commenting regardless of their location or use of some IP masking software.
 
 __Version 2.1.0__ - This release adds a few new functions to the blog page:
 
