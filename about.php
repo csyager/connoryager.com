@@ -132,14 +132,10 @@
 	<br>
 	<div class="row">
 		<div class="img-thumbnail" style="width: 165px; margin: 50px">
-			<a href="college_transcript.pdf" target="_blank">
 				<img src="images/uva_logo.png">
-			</a>
 		</div>
 		<div class="img-thumbnail" style="width: 250px; height: 200px; margin-top: 50px">
-			<a href="transcript.pdf" target="_blank">
 				<img src="images/na_logo.png">
-			</a>
 		</div>
 	</div>
 	<br>
