@@ -180,7 +180,7 @@
               $sql = "SELECT date, post, comment FROM comments WHERE user = '" . $_SESSION['user'] . "' ORDER BY (date) DESC";
               $result = $mysqli -> query($sql);
               while($row = $result->fetch_assoc()) {
-                echo "<a href = 'blog.php#commentSection" . $row['post'] ."' class = 'normal' style='text-decoration:none; text-color: black'>At " . $row['date'] . ": <br>" . $row['comment']. "</a><hr>";
+                echo "<a href = 'blog.php#commentSection" . $row['post'] ."' class = 'normal' style='text-decoration:none; text-color: black; color: black'>At " . $row['date'] . ": <br>" . $row['comment']. "</a><hr>";
               }
             ?>
 
