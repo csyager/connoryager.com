@@ -34,13 +34,16 @@
           echo "Errno:  " . $mysqli->connect_errno . "\n";
           echo "Error:  " . $mysqli->connect_errno . "\n";
         }
-        //mySQL username query
-        $sql = "SELECT username, auth_key, email from users WHERE username = '" . $_POST['user'] . "' AND auth_key = '" . $_POST['password'] . "'";
+
+        //mySQL query
+
+        $sql = "SELECT username, auth_key, email from users WHERE username = '" . $_POST['user'] . "'";
 
         $result = $mysqli -> query($sql);
+        $hash = $result -> fetch_object() -> auth_key;
         $email = $result ->fetch_object() -> email;
 
-        if ($result -> num_rows == 0){
+        if (($result -> num_rows == 0)||(!password_verify($_POST['password'], $hash))){
           echo "<div class = 'transbox-red' id = 'login_error'><p style = 'text-color: white'>The username or password is incorrect</p></div>";
         } else {
           $_SESSION['user'] = $_POST['user'];
