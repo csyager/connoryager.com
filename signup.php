@@ -45,7 +45,9 @@
           echo "<div class = 'transbox-red' id = 'signup_error'><p style = 'text-color: white'>Passwords do not match.</p></div>";
         } else {
           //mySQL add user query
-          $sql = "INSERT INTO users(username, auth_key, email) VALUES('" . $_POST['user'] . "'" . ", '" . $_POST['password'] . "', '" . $_POST['email'] ."')";
+          $password = $_POST['password'];
+          $hash = password_hash($password, PASSWORD_DEFAULT);
+          $sql = "INSERT INTO users(username, auth_key, email) VALUES('" . $_POST['user'] . "'" . ", '" . $hash . "', '" . $_POST['email'] ."')";
           $result = $mysqli -> query($sql);
 
           echo "<h2 style = 'color: white; margin-left: 5px'>Success! Account Created</h2><br>";
