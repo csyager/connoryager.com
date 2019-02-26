@@ -120,7 +120,53 @@
 <div class="transbox-red" id="blacklistError"></div>
 <div class="container" style="max-width: none; width: 100%;">
 	<div class="card-columns">
+		<!--post 9-->
+		<a id="post9"></a>
+		<div class="card mb-4">
+			<video class="card-img-top" controls>
+				<source src="images/comedy.mp4" type="video/mp4">
+			</video>
+			<div class="card-body">
+				<h2 class="card-title">Comedy Routine</h2>
+				<p class="card-text">Last week I took a step outside my comfort zone and decided to perform a standup comedy routine in a competition sponsored by the UVa Alumni Association.  The prize for winning was a $2,500 scholarship, but I had very low expectations of winning.  While I was very nervous to participate, I wanted to express some creativity outside of my school work, and I thought performing in front of a small crowd would be a good way to flex my creative muscles.  I was definitely nervous, but overall I think the performance was a success, and while I didn't win anything it was fun just to give it a shot, especially with the support of a lot of my friends.
 
+				<br>
+				<br>
+				<h3>Leave a Comment</h3>
+				<form action="" method="post" id="comment9">
+					<textarea name="comment" id="comment" rows="4" required="required" style="width: 538px; text-indent: 5px; margin-bottom: 5px" class="rounded"></textarea><br>
+
+					<?php
+						if(isset($_SESSION['user'])){
+							echo "<input action=\"blog.php\" name=\"submit9\" type=\"submit\" value=\"Submit Comment\" style=\"text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 131px; height: 35px; font-size: 14px\" class=\"btn btn-info\"/>";
+            } else {
+              echo '<input onclick = "window.location.href = \'login.php\'" value = "Login to leave a comment" style="text-indent: 0px; padding: 5px; margin-bottom: 5px; width: 200px; font-size: 14px" class="btn btn-info">';
+            }
+          ?>
+				</form>
+				<h3>Comments</h3>
+				<?php
+				if(isset($_POST["submit9"])){
+					$post = '9';
+					include 'post_comment.php';
+				}
+				?>
+				<div id="commentSection9">
+					<?php $disp_post = 9; ?>
+					<?php include 'fetch_comment.php';?>
+					<div id="expandedComments9" class="collapse in">
+						<?php include 'fetch_extras.php';?>
+					</div>
+					<button id="expand9" type="button" class="btn btn-info" data-toggle="collapse" data-target="#expandedComments9" style="width: 200px" onclick="commentChange(this.id)">View More Comments</button>
+				</div>
+
+			</div>
+			<div class="card-footer text-muted">
+				Posted on February 26th, 2019 by Connor Yager
+			</div>
+		</div>
+
+		<!--post 8-->
 		<a id="post8"></a>
 		<div class="card mb-4">
 			<img class="card-img-top" src="images/network.jpg">
