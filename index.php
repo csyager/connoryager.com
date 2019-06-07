@@ -21,6 +21,7 @@
 	<header>
 		<h1>Connor Yager</h1>
 	</header>
+	<?php $index = "active" ?>
 	<nav class = "navbar navbar-default regular">
 		<div class = "container-fluid">
 			<div class = "col" align="center">
