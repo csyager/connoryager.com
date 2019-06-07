@@ -18,81 +18,8 @@
 </head>
 
 <body>
-	<header>
-		<h1>Connor Yager</h1>
-	</header>
-	<nav class = "navbar navbar-default regular">
-		<div class = "container-fluid">
-			<div class = "col" align="center">
-				<a href = "index.php" class = "btn">Home</a>
-			</div>
-			<div class = "col" align="center">
-				<a href = "about.php" class = "btn">About Connor</a>
-			</div>
-			<div class = "col" align="center">
-				<a href = "blog.php" class = "btn">Blog</a>
-			</div>
-			<div class = "col" align="center">
-				<a href = "photos.php" class = "btn">Photos</a>
-			</div>
-			<div class = "col" align="center">
-				<?php
-					if (isset($_SESSION['user'])){
-						echo '<div class="dropdown">
-						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].
-						  '</button>
-						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="profile.php">Profile</a>
-						    <a class="dropdown-item" href="clearsession.php">Logout</a>
-						  </div>
-						</div>';
-
-					} else {
-						echo '<a href="login.php" class="btn">Login</a>';
-					}
-					?>
-			</div>
-		</div>
-	</nav>
-	<nav class=" navbar navbar-default droptop">
-
-		<div class="container-fluid">
-			<div class="container btn col-sm-2 col-2" data-toggle="collapse" data-target="#dropper" onclick="makeX(this)" style="float: right;">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<div id="dropper" class="collapse">
-				<a href="index.php" class="btn" style="font-size: 20px;">Home</a><br>
-				<a href="about.php" class="btn" style="font-size: 20px;">About Connor</a><br>
-				<a href="blog.php" class="btn" style="font-size: 20px;">Blog</a><br>
-				<a href="photos.php" class="btn" style="font-size: 20px;">Photos</a><br>
-				<?php
-					if (isset($_SESSION['user'])){
-						echo '<div class="dropdown">
-						  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].
-						  '</button>
-						  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						    <a class="dropdown-item" href="profile.php">Profile</a>
-						    <a class="dropdown-item" href="clearsession.php">Logout</a>
-						  </div>
-						</div>';
-
-					} else {
-						echo '<a href="login.php" class="btn" style="font-size:20px;">Login</a>';
-					}
-					?>
-			</div>
-		</div>
-	</nav>
-
-	<!--resize navbar js -->
-	<script type="text/javascript">
-  //source https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_icon_js
-  function makeX(x) {
-  	x.classList.toggle("change");
-  }
-</script>
+	<?php $photos_active = 'active'; ?>
+	<?php include 'navigation.php'; ?>
 <br>
 <h1>Photos</h1>
 <div class="container">
