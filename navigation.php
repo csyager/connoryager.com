@@ -32,7 +32,7 @@
           </li>';
 
         } else {
-          echo '<li class="nav-item"><a href="login.php" class="btn"><span class="oi oi-person" title="person" aria-hidden="true"></span> Login</a></li>';
+          echo '<li class="nav-item"><a href="login.php" class="btn"><span class=iconic iconic-person" title="person" aria-hidden="true"></span> Login</a></li>';
         }
        echo '
   </ul>
