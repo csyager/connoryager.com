@@ -21,7 +21,7 @@
 	<header>
 		<h1>Connor Yager</h1>
 	</header>
-	<?php include 'navigation.php'; >
+	<?php include 'navigation.php'; ?>
 
 	<!--resize navbar js -->
 	<script type="text/javascript">
