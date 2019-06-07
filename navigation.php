@@ -17,7 +17,7 @@
       <a class="nav-link" href="blog.php">Blog</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="photos.php"></a>
+      <a class="nav-link" href="photos.php">Photos</a>
     </li>
   </ul>
   <ul class="navbar-nav my-2 my-lg-0">
