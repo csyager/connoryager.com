@@ -7,7 +7,7 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item">
+    <li class="nav-item '. $index .'">
       <a class="nav-link" href="index.php">Index</a>
     </li>
     <li class="nav-item">

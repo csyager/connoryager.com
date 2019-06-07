@@ -21,6 +21,7 @@
 	<header>
 		<h1>Connor Yager</h1>
 	</header>
+	<?php $index = 'active'; ?>
 	<?php include 'navigation.php'; ?>
 
 	<!--resize navbar js -->
