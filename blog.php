@@ -39,12 +39,9 @@
 </head>
 
 <body>
-	<header>
-		<h1>Connor Yager</h1>
-	</header>
 	<?php $blog_active = 'active'; ?>
 	<?php include 'navigation.php'; ?>
-	
+
 <h1>Blog</h1>
 
 <!--where blacklisting errors will be displayed -->

@@ -18,9 +18,6 @@
 </head>
 
 <body>
-	<header>
-		<h1>Connor Yager</h1>
-	</header>
 	<?php $photos_active = 'active'; ?>
 	<?php include 'navigation.php'; ?>
 <br>

@@ -23,9 +23,6 @@
 </head>
 
 <body>
-	<header>
-		<h1>Connor Yager</h1>
-	</header>
 	<?php $about_active = 'active'; ?>
 	<?php include 'navigation.php'; ?>
 

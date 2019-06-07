@@ -18,9 +18,6 @@
 </head>
 
 <body onresize="pageChange()" onload="pageChange()">
-	<header>
-		<h1>Connor Yager</h1>
-	</header>
 	<?php $index_active = 'active'; ?>
 	<?php include 'navigation.php'; ?>
 
