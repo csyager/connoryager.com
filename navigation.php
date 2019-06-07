@@ -1,6 +1,6 @@
 <?php echo '
 <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #e69138ff">
-  <a class="navbar-brand" href="index.php">Connor Yager</a>
+  <span class="navbar-brand mb-0 h1">Connor Yager</span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
   </button>
