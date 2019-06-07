@@ -1,4 +1,4 @@
-<?php echo'
+<?php echo '
 <nav class="navbar navbar-expand-md navbar-light bg-orange">
   <ul class="navbar-nav">
     <li class="nav-item">
