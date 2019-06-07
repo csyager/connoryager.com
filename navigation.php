@@ -8,7 +8,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item '. $index_active .'">
-      <a class="nav-link" href="index.php">Index</a>
+      <a class="nav-link" href="index.php">Home</a>
     </li>
     <li class="nav-item '. $about_active .'">
       <a class="nav-link" href="about.php">About Connor</a>
@@ -25,7 +25,7 @@
         if (isset($_SESSION['user'])){
           echo '<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'.$_SESSION['user'].'</a>
-            <div class="dropdown-menu aria-labelledby="navbarDropdown"">
+            <div class="dropdown-menu pull-left aria-labelledby="navbarDropdown"">
               <a class="dropdown-item" href="profile.php">Profile</a>
               <a class="dropdown-item" href="clearsession.php">Logout</a>
             </div>
