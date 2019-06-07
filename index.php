@@ -15,6 +15,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" type="text/css" href="css/secondary.css">
 
+	<!--Open Ionic -->
+	<link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 </head>
 
 <body onresize="pageChange()" onload="pageChange()">
