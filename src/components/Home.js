@@ -9,7 +9,7 @@ function Home() {
             <div className="container bio">
                 <p>
                     Hi, I'm Connor Yager.  I'm a software engineer living in Richmond, VA.  
-                    I'm a 2016 graduate from the University of Virginia's School of Engineering and Applied Science, with a major in Computer Science and a minor in Physics.
+                    I'm a 2020 graduate from the University of Virginia's School of Engineering and Applied Science, with a major in Computer Science and a minor in Physics.
                     Before attending UVA, I lived with my family in Virginia Beach, VA and graduated from Norfolk Academy.
                 </p>
                 <p>

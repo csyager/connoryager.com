@@ -1,6 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Posts from './components/Posts';
+import Post from './components/Post';
+import Projects from './components/Projects';
+import Project from './components/Project';
 import Footer from './components/Footer';
 import {
   BrowserRouter as Router,
@@ -17,11 +21,13 @@ function App() {
           <Router>
             <Navbar active="Home" />
             <Switch>
+              <Route path="/posts/:filename" children={<Post />} />
               <Route path="/posts">
-                <h1>Posts</h1>
+                <Posts />
               </Route>
+              <Route path="/projects/:filename" children={<Project />} />
               <Route path="/projects">
-                <h1>Projects</h1>
+                <Projects />
               </Route>
               <Route path="/">
                 <Home />

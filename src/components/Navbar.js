@@ -33,10 +33,7 @@ function Navbar(props) {
                         <NavLink to="/projects">Projects</NavLink>
                     </li>  
                 </ul>
-                <form className="form-inline my-2 my-lg-0" method="get" action="search.html">
-                    <input name="query" className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+
             </div>
         </nav>
     );
