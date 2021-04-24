@@ -95,7 +95,6 @@ div.post-content {
 }
 
 div.post-header-img {
-  max-width: 50%;
   min-width: 30%;
   float: left;
   padding-right: 30px;
@@ -108,4 +107,14 @@ img.github-intext {
 
 p.post-body {
   justify-content: left;
+}
+
+blockquote.blockquote {
+  border-left: 10px solid #ccc;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
 }

@@ -1,8 +1,12 @@
 import { useParams } from "react-router-dom";
+import PowerOfDifferenceProject from "./projects/PowerOfDifference";
 import StopMotionProject from "./projects/StopMotion";
+import STSPaperProject from "./projects/STSPaper";
 
 var components = {
-    'stopmotion': StopMotionProject
+    'stopmotion': StopMotionProject,
+    'stspaper': STSPaperProject,
+    'powerofdifference': PowerOfDifferenceProject
 }
 
 function Project() {
