@@ -1,12 +1,18 @@
 import rtx3070Image from '../../images/projects/rtx3070.png';
-import githubImage from '../../images/github.png';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+    faGithub
+  } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+library.add(faGithub);
 
 function RtxStockBotProject() {
     return (
         <div className="container post-content">
             <h1 className="display-4">Graphics Card Stock Bot</h1>
             <h5 className="text-muted">Apr 25, 2021</h5><br />
-            <p><img src={githubImage} alt="github" className="github-intext" /> This project is on Github!  Click <a href="https://github.com/csyager/rtx-stock-bot" target="_blank" rel="noreferrer">here</a> to view!</p>
+            <p><FontAwesomeIcon icon={faGithub} /> This project is on Github!  Click <a href="https://github.com/csyager/rtx-stock-bot" target="_blank" rel="noreferrer">here</a> to view!</p>
             
             <div className="post-header-img">
                 <a href={rtx3070Image}><img src={rtx3070Image} alt="Nvidia RTX 3070" className="img-fluid" /></a>
