@@ -118,3 +118,10 @@ blockquote.blockquote {
   margin-bottom: 10px;
   font-style: italic;
 }
+
+pre {
+  background-color: #212529;
+  padding: .5rem .5rem .5rem;
+  border-radius: .5rem;
+  color: #38fe27;
+}

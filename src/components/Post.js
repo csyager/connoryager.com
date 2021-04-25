@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
 import GreekRhoPost from "./posts/Greekrho";
+import ReactAppS3Post from "./posts/ReactAppS3";
 
 var components = {
-    'greekrho': GreekRhoPost
+    'greekrho': GreekRhoPost,
+    'reactapps3': ReactAppS3Post
 }
 
 function Post() {
