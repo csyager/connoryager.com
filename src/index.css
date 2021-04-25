@@ -131,10 +131,6 @@ img.card-img-top {
   max-width: 20rem;
 }
 
-div.card-columns {
-  /* margin-right:15px; */
-}
-
 @media (min-width: 576px) {
   .card-columns {
       column-count: 2;
