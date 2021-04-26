@@ -143,3 +143,15 @@ img.card-img-top {
       column-count: 3;
   }
 }
+
+div.form-card {
+  margin: auto;
+}
+
+input.crypto-calc-input {
+  width: 75%!important;
+}
+
+div.crypto-calc-row {
+  padding-bottom: 25px;
+}
