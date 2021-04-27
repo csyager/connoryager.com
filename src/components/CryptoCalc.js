@@ -66,7 +66,7 @@ function CryptoCalc() {
         // setGrossProfitsPerDay(ethPrice * coinsPerDay);
         // setPowerCostPerDay(24*(1/1000)*costPerKWh*powerConsumption);
         // setNetProfitPerDay(grossProfitsPerDay-powerCostPerDay);
-        var coinsPerDay = ((2 * hashingPower * Math.pow(10, 6) * 86400)/difficulty) * (1 - poolFee/100);
+        var coinsPerDay = ((2.89761 * hashingPower * Math.pow(10, 6) * 86400)/difficulty) * (1 - poolFee/100);
         var grossProfitsPerDay = ethPrice * coinsPerDay;
         var powerCostPerDay = 24*(1/1000)*costPerKWh*powerConsumption;
         var netProfitPerDay = grossProfitsPerDay-powerCostPerDay;
