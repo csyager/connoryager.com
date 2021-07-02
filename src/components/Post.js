@@ -3,12 +3,14 @@ import GreekRhoPost from "./posts/Greekrho";
 import ReactAppS3Post from "./posts/ReactAppS3";
 import ReactRouterPost from "./posts/ReactRouter";
 import CryptoMiningPost from "./posts/CryptoMining";
+import ChaosGamePost from './posts/ChaosGame';
 
 var components = {
     'greekrho': GreekRhoPost,
     'reactapps3': ReactAppS3Post,
     'reactrouter': ReactRouterPost,
-    'cryptomining': CryptoMiningPost
+    'cryptomining': CryptoMiningPost,
+    'chaosgame': ChaosGamePost
 }
 
 function Post() {
