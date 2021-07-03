@@ -16,6 +16,7 @@ function ResultsTable(props) {
     if (props.netProfitPerDay > 0){
         var profitsClassName = "table-success";
     } else {
+        // eslint-disable-next-line
         var profitsClassName = "table-danger";
     }
     return (

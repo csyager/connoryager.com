@@ -101,9 +101,32 @@ div.post-header-img {
   padding-right: 30px;
 }
 
+div.post-img-right {
+  min-width: 30vh;
+  float: right;
+  padding-left: 30px;
+}
+
+div.post-img-left {
+  min-width: 30vh;
+  float: left;
+  padding-right: 30px;
+}
+
 img.github-intext {
   height:20px;
   width: 20px;
+}
+
+figure {
+  display: table;
+  width: fit-content;
+}
+
+figcaption.figure-caption {
+  padding-left: 60px;
+  min-width: 30vh;
+  max-width: fit-content;
 }
 
 p.post-body {
