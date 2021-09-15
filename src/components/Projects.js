@@ -2,14 +2,17 @@ import Card from './Card';
 import stopmotionImage from '../images/projects/stopmotion.png';
 import powerofdifferenceImage from '../images/projects/powerofdifference.png';
 import rtx3070Image from '../images/projects/rtx3070.png';
+import scikitLearnImage from '../images/projects/scikit-learn.png';
 
 function Projects() {
     return (
         <div className="container">
             <h1>Projects</h1>
             <div className="card-columns">
+				<Card image={scikitLearnImage} title="ML Tennis Match Predictor" filename='projects/tennisml' date="Sep 14, 2021"
+					text='A python project that uses machine learning to analyze player statistics and past matches to predict the outcome of future ones.' />
                 <Card image={rtx3070Image} title="Graphics Card Stock Bot" filename='projects/stockbot' date="Apr 25, 2021"
-                        text="A simple stock bot script that checks a few sites for graphics card stock and notifies me if it finds any" />
+                    text="A simple stock bot script that checks a few sites for graphics card stock and notifies me if it finds any" />
                 <Card image={stopmotionImage} title="Arduino Stop Motion" filename='projects/stopmotion' date="Apr 23, 2021"
                     text='An Arduino Uno-powered stop motion camera that sends images over HTTP to AWS for storage in an S3 Bucket' />
                 <Card image={powerofdifferenceImage} title="Power of Difference Survey" filename='projects/powerofdifference' date="Jun 20, 2020"
