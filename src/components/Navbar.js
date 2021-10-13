@@ -15,6 +15,7 @@ function NavLink(props) {
 
 function Navbar(props) {
     return (
+        <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light px-4 px-md-3">
             <Link to="/" className="navbar-brand" href="home.html">Connor Yager</Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +34,15 @@ function Navbar(props) {
                         <NavLink to="/projects">Projects</NavLink>
                     </li>  
                 </ul>
+                <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <button className="btn btn-link subscribe-modal-btn" data-toggle="modal" data-target="#subscribeModal">Subscribe to email newsletter</button>
+                    </li>
+                </ul>
 
             </div>
         </nav>
+        </>
     );
 }
 

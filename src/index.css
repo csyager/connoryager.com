@@ -192,3 +192,21 @@ div.tennis-form-container {
 		font-size: 18px;
 	}
 }
+
+button.subscribe-modal-btn {
+  color: black;
+  text-decoration: none;
+}
+
+button.subscribe-modal-btn:hover {
+  color: black;
+  text-decoration: none;
+}
+
+div.modal {
+  padding-right: 15px !important;
+}
+
+.modal-open {
+  overflow: auto;
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
+import SubscribeModal from "./components/SubscribeModal";
 import Home from './components/Home';
 import Posts from './components/Posts';
 import Post from './components/Post';
@@ -35,6 +36,8 @@ function App() {
             </Switch>
           </Router>
           <Footer />
+          {/* popup modal for subscribing to email notifications */}
+          <SubscribeModal />  
         </div>
         <div className="col-1 right-margin d-none d-md-flex"></div>
       </div>
