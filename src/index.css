@@ -210,3 +210,16 @@ div.modal {
 .modal-open {
   overflow: auto;
 }
+
+
+.monty-hall-button-text {
+  font-size: 30px;
+}
+
+.monty-hall-button-col {
+  padding-top: 15px;
+}
+
+.monty-hall-play-again {
+  padding-left: 15px;
+}
