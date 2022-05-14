@@ -53,15 +53,15 @@ function ReactPost() {
 
 2 directories, 17 files`}</code></pre>
 
-        <p>If your browser didn't automatically open the page already, open your browser and navigate to <code>http://localhost:3000</code>.  You should now see the default react page running in your browser!</p>
+        <p>If your browser didn't automatically open the page already, open your browser and navigate to <code className="inline">http://localhost:3000</code>.  You should now see the default react page running in your browser!</p>
         <img src={reactdefaultImage} alt="default react page" className="img-fluid"/>
-        <p>You can now substitute the default code for your project.  The main place that your code lives is in the <code>src/App.js</code> file.  Changing this file and saving should automatically refresh the page in your browser, which is very useful for seeing your changes take effect in real time.  React is a single-page application by default, but if you're interested in adding more standard routing to your application, check out my post on react-router.</p>
+        <p>You can now substitute the default code for your project.  The main place that your code lives is in the <code className="inline">src/App.js</code> file.  Changing this file and saving should automatically refresh the page in your browser, which is very useful for seeing your changes take effect in real time.  React is a single-page application by default, but if you're interested in adding more standard routing to your application, check out my post on react-router.</p>
         <hr />
         <h2>Hosting Your React App on S3</h2>
-        <p>Now we want to host our app somewhere, so people can view it on the internet.  To do this, we're going to start in the AWS console.  Log into your account and navigate to the S3 console.  Click on "Create Bucket."  For the name, you're going to want to name it <b>whatever your domain will eventually be</b>.  For example, this site is hosted on a bucket called <code>www.connoryager.com</code>, because that is the domain that I'm hosting this site on.  S3 bucket names need to be globally unique.</p>
+        <p>Now we want to host our app somewhere, so people can view it on the internet.  To do this, we're going to start in the AWS console.  Log into your account and navigate to the S3 console.  Click on "Create Bucket."  For the name, you're going to want to name it <b>whatever your domain will eventually be</b>.  For example, this site is hosted on a bucket called <code className="inline">www.connoryager.com</code>, because that is the domain that I'm hosting this site on.  S3 bucket names need to be globally unique.</p>
         <p>Once you've named your bucket, find the checkbox marked "Block all public access."  Because we want our site to be publicly accessible, we need to uncheck this box, and make sure all the boxes beneath it are also unchecked.  Once this is done, click "Create bucket".</p>
         <p>Navigate into your created bucket, which should be empty.  Click on the Properties tab, and scroll to "Static website hosting."  Click on the Edit button, and change the radio button under "Static website hosting" to "Enable."  Under index document, type "index.html."  This tells the S3 website where the file we want to display when users navigate to our site will be located.  Click "Save changes" and navigate back to the main page for your bucket.</p>
-        <p>Click on the permissions tab and scroll to "Bucket policy.  By default, users won't be able to see your site because they don't have the GetObject permission on your bucket.  Click Edit, and in the Policy editor copy and paste this policy, replacing <code>your-bucket-name</code> with the name of your bucket:</p>
+        <p>Click on the permissions tab and scroll to "Bucket policy.  By default, users won't be able to see your site because they don't have the GetObject permission on your bucket.  Click Edit, and in the Policy editor copy and paste this policy, replacing <code className="inline">your-bucket-name</code> with the name of your bucket:</p>
         <pre><code>{`{
     "Version": "2008-10-17",
     "Id": "PolicyForPublicWebsiteContent",
@@ -82,7 +82,7 @@ function ReactPost() {
 
         <hr />
         <h2>Building your React app and uploading to S3</h2>
-        <p>We're going to do a quick shortcut here by creating a custom script that we can run from the command line.  Open <code>package.json</code> in the top level directory of your React project.  In the script object, add this line as a list element, again replacing your-bucket-name with your bucket name: <kbd>"deploy": "aws s3 sync build/ s3://your-bucket-name"</kbd>.  Your scripts object should now look something like this:</p>
+        <p>We're going to do a quick shortcut here by creating a custom script that we can run from the command line.  Open <code className="inline">package.json</code> in the top level directory of your React project.  In the script object, add this line as a list element, again replacing your-bucket-name with your bucket name: <kbd>"deploy": "aws s3 sync build/ s3://your-bucket-name"</kbd>.  Your scripts object should now look something like this:</p>
 
         <pre><code>{`"scripts": {
     "start": "react-scripts start",
@@ -112,7 +112,7 @@ Compiled successfully.
         <hr />
         <h2>Using a custom domain</h2>
         <p>You probably don't want your users to need to navigate to that long URL everytime they try to find your site.  To fix this, we'll use AWS's Route 53 service to purchase a domain name and create a record mapping your domain to your new static site.  Navigate to the Route 53 dashboard in the AWS console.  First, we need to create a domain.  In the side navigation bar, click "Registered domains," and click "Register Domain."  In the search bar, search for the domain that you wish to use.  For my site, that's "connoryager.com".  Follow the options to purchase the domain.  This can take a little time to propagate, and requires that your domain name be unique.</p>
-        <p>Now, back in the Route 53 console, click "Hosted zones" and then "Create hosted zone".  In the dialogue box under Domain name, enter the domain name that you just purchased.  For example, the domain name for this site is "connoryager.com."  Then, click "Create hosted zone."  Once this is complete, click on the new hosted zone and click "Create record."  Under record name, enter "www", and under Record type select "A."  When selecting where to route to, enter the static website URL that we got from the S3 static website hosting console.  Then click "Create records," and you're all done!  After a few minutes, navigating to <code>http://www.your-domain-name.com</code> should bring up you're React app!</p>
+        <p>Now, back in the Route 53 console, click "Hosted zones" and then "Create hosted zone".  In the dialogue box under Domain name, enter the domain name that you just purchased.  For example, the domain name for this site is "connoryager.com."  Then, click "Create hosted zone."  Once this is complete, click on the new hosted zone and click "Create record."  Under record name, enter "www", and under Record type select "A."  When selecting where to route to, enter the static website URL that we got from the S3 static website hosting console.  Then click "Create records," and you're all done!  After a few minutes, navigating to <code className="inline">http://www.your-domain-name.com</code> should bring up you're React app!</p>
 
         <hr />
         <h2>Conclusion</h2>

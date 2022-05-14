@@ -5,6 +5,7 @@ import ReactRouterPost from "./posts/ReactRouter";
 import CryptoMiningPost from "./posts/CryptoMining";
 import ChaosGamePost from './posts/ChaosGame';
 import SurvivorMontyHall from './posts/SurvivorMontyHall';
+import SpringCaching from './posts/SpringCaching';
 
 var components = {
     'greekrho': GreekRhoPost,
@@ -12,7 +13,8 @@ var components = {
     'reactrouter': ReactRouterPost,
     'cryptomining': CryptoMiningPost,
     'chaosgame': ChaosGamePost,
-    'survivormontyhall': SurvivorMontyHall
+    'survivormontyhall': SurvivorMontyHall,
+    'springcaching': SpringCaching
 }
 
 function Post() {

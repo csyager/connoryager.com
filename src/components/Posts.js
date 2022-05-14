@@ -4,12 +4,15 @@ import reactImage from '../images/posts/react.png';
 import reactrouterlogoImage from '../images/posts/reactrouterlogo.png';
 import sierpinskyTriangle from '../images/posts/sierpinsky-triangle.png';
 import montyHall from '../images/posts/survivor_monty_hall.png';
+import redisplusspring from '../images/posts/redis+spring.png';
 
 function Posts() {
     return (
         <div className="container">
             <h1>Posts</h1>
             <div className="card-columns">
+                <Card image={redisplusspring} title={"Adding a Redis Cache to Your Spring Boot Service"} filename='posts/springcaching' date="May 1, 2022"
+                    text='A short tutorial on how to add Redis caching to your Java Spring service' />
                 <Card image={montyHall} title={["Monty Hall and ", <i key="italic">Survivor</i>, "'s Do or Die Game"]} filename='posts/survivormontyhall' date="Dec 2, 2021"
                     text='An explanation of Survivor 41&apos;s Monty Hall Do-or-Die game' />
                 <Card image={sierpinskyTriangle} title="Chaos Game" filename='posts/chaosgame' date="Jun 26, 2021"
