@@ -6,6 +6,8 @@ import CryptoMiningPost from "./posts/CryptoMining";
 import ChaosGamePost from './posts/ChaosGame';
 import SurvivorMontyHall from './posts/SurvivorMontyHall';
 import SpringCaching from './posts/SpringCaching';
+import K8sSpringboot from './posts/K8sSpringboot';
+import { useEffect } from "react";
 
 var components = {
     'greekrho': GreekRhoPost,
@@ -14,12 +16,16 @@ var components = {
     'cryptomining': CryptoMiningPost,
     'chaosgame': ChaosGamePost,
     'survivormontyhall': SurvivorMontyHall,
-    'springcaching': SpringCaching
+    'springcaching': SpringCaching,
+    'k8sspringboot': K8sSpringboot
 }
 
 function Post() {
     let { filename } = useParams();
     var MyComponent = components[filename];
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <MyComponent />
     );

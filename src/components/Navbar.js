@@ -4,10 +4,20 @@ import {
 import { useLocation } from 'react-router-dom';
 
 function NavLink(props) {
-    var isActive = useLocation()["pathname"] === props.to;
-    var className = isActive ? 'nav-link active' : 'nav-link';
+    const isActive = "/" + useLocation()["pathname"].split("/")[1] === props.to;
+    const className = isActive ? 'nav-link active' : 'nav-link';
+    var shouldIncludeDataToggle = window.innerWidth < 992;
+    let collapseProps = {
+        'data-toggle': 'collapse',
+        'data-target': '#navbarSupportedContent',
+    };
+    if (!shouldIncludeDataToggle) {
+        collapseProps['data-target'] = null;
+        collapseProps['data-toggle'] = null;
+    }
+
     return(
-        <Link className={className} {...props}>
+        <Link className={className} {...collapseProps} {...props} >
             {props.children}
         </Link>
     );

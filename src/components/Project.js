@@ -4,6 +4,7 @@ import StopMotionProject from "./projects/StopMotion";
 import STSPaperProject from "./projects/STSPaper";
 import RtxStockBotProject from "./projects/RtxStockBot";
 import TennisMLProject from "./projects/TennisML";
+import { useEffect } from "react";
 
 var components = {
     'stopmotion': StopMotionProject,
@@ -16,6 +17,9 @@ var components = {
 function Project() {
     let { filename } = useParams();
     var MyComponent = components[filename];
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <MyComponent />
     );

@@ -16,9 +16,9 @@ import {
 function App() {
   return (
     <>
-      <div className="row full-height">
-        <div className="col-1 left-margin d-none d-md-flex"></div>
-        <div className="col text-center shadow-lg">
+      <div className="row no-gutters full-height">
+        <div className="col-2 left-margin d-none d-md-flex"></div>
+        <div className="col-12 col-md-8 text-center shadow-lg">
           <Router>
             <Navbar active="Home" />
             <Switch>
@@ -39,7 +39,7 @@ function App() {
           {/* popup modal for subscribing to email notifications */}
           <SubscribeModal />  
         </div>
-        <div className="col-1 right-margin d-none d-md-flex"></div>
+        <div className="col-2 right-margin d-none d-md-flex"></div>
       </div>
     </>
   );

@@ -5,12 +5,15 @@ import reactrouterlogoImage from '../images/posts/reactrouterlogo.png';
 import sierpinskyTriangle from '../images/posts/sierpinsky-triangle.png';
 import montyHall from '../images/posts/survivor_monty_hall.png';
 import redisplusspring from '../images/posts/redis+spring.png';
+import k8splusspring from '../images/posts/k8s+spring.png';
 
 function Posts() {
     return (
         <div className="container">
             <h1>Posts</h1>
             <div className="card-columns">
+                <Card image={k8splusspring} title={"Containerizing a Java Spring Boot Service for EKS"} filename='posts/k8sspringboot' date="Aug 23, 2022"
+                    text='A tutorial on how to containerize your Java Spring Boot application and run it on AWS EKS' />
                 <Card image={redisplusspring} title={"Adding a Redis Cache to Your Spring Boot Service"} filename='posts/springcaching' date="May 1, 2022"
                     text='A short tutorial on how to add Redis caching to your Java Spring service' />
                 <Card image={montyHall} title={["Monty Hall and ", <i key="italic">Survivor</i>, "'s Do or Die Game"]} filename='posts/survivormontyhall' date="Dec 2, 2021"
