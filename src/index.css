@@ -69,12 +69,28 @@ img.headshot {
   min-width: 200px;
 }
 
+img.navbar-icon {
+  margin-right: 10px;
+}
+
 a.nav-link {
   font-size: 20px;
 }
 
 div.footer-container {
-  padding-top: 120px;
+  padding-top: 170px;
+}
+
+@media (min-width: 992px) {
+  div.footer-container {
+    padding-top: 110px;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.footer-container {
+    padding-top: 60px;
+  }
 }
 
 footer.footer {
@@ -89,8 +105,16 @@ footer.footer {
 div.footer-col {
   display: inline-block;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 10%;
+}
+
+img.footer-icon {
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+h3.footer-brand {
+  display: inline-block;
+  max-width: 80%;
 }
 
 div.bio {
@@ -142,6 +166,15 @@ div.post-img-left {
   min-width: 30vh;
   float: left;
   padding-right: 30px;
+}
+
+img.post-img {
+  margin-bottom: 1rem;
+}
+
+img.post-img-bordered {
+  border: 2px;
+  border-style: solid;
 }
 
 img.github-intext {

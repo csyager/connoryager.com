@@ -12,6 +12,8 @@ function Posts() {
         <div className="container">
             <h1>Posts</h1>
             <div className="card-columns">
+                <Card image={k8splusspring} title={"EKS Part II:  TLS on the ALB Ingress"} filename='posts/k8stls' date="Aug 29, 2022"
+                    text='A tutorial adding TLS and HTTPS termination to the Kubernetes application built in the previous post' />
                 <Card image={k8splusspring} title={"Containerizing a Java Spring Boot Service for EKS"} filename='posts/k8sspringboot' date="Aug 23, 2022"
                     text='A tutorial on how to containerize your Java Spring Boot application and run it on AWS EKS' />
                 <Card image={redisplusspring} title={"Adding a Redis Cache to Your Spring Boot Service"} filename='posts/springcaching' date="May 1, 2022"

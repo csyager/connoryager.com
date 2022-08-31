@@ -2,6 +2,7 @@ import {
     Link
 } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import icon from '../images/icon.png';
 
 function NavLink(props) {
     const isActive = "/" + useLocation()["pathname"].split("/")[1] === props.to;
@@ -27,7 +28,10 @@ function Navbar(props) {
     return (
         <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light px-4 px-md-3">
-            <Link to="/" className="navbar-brand" href="home.html">Connor Yager</Link>
+            <Link to="/" className="navbar-brand" href="home.html">
+                <img src={icon} className="navbar-icon" width="35" height="35" alt="" />
+                connoryager.com
+            </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

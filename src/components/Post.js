@@ -7,6 +7,7 @@ import ChaosGamePost from './posts/ChaosGame';
 import SurvivorMontyHall from './posts/SurvivorMontyHall';
 import SpringCaching from './posts/SpringCaching';
 import K8sSpringboot from './posts/K8sSpringboot';
+import K8sTLS from './posts/K8sTLS';
 import { useEffect } from "react";
 
 var components = {
@@ -17,7 +18,8 @@ var components = {
     'chaosgame': ChaosGamePost,
     'survivormontyhall': SurvivorMontyHall,
     'springcaching': SpringCaching,
-    'k8sspringboot': K8sSpringboot
+    'k8sspringboot': K8sSpringboot,
+    'k8stls': K8sTLS
 }
 
 function Post() {
