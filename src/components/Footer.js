@@ -25,7 +25,7 @@ function Footer() {
                         <div className="row">
                             <div className="col-xl-6 footer-col">
                                 Connor Yager<br />
-                                <a href="mailto:cyager@captechconsulting.com">cyager@captechconsulting.com</a>
+                                <a href="mailto:connor.s.yager@gmail.com">connor.s.yager@gmail.com</a>
                             </div>
                             <div className="col-xl-6 footer-col">
                                 <a href="https://twitter.com/connor_yager" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter} /> @connor_yager</a><br />

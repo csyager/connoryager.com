@@ -146,7 +146,6 @@ function K8sSpringbootPost() {
         <div className="container post-content">
             <h1 className="display-4">Containerizing a Java Spring Boot Service for EKS</h1>
             <h5 className="text-muted">Aug 23, 2022</h5><br />
-            
             <div className="post-header-img">
                 <img src={k8sSpringbootImage} alt="greekrho" className="img-fluid" />
             </div>

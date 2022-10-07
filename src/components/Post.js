@@ -8,6 +8,7 @@ import SurvivorMontyHall from './posts/SurvivorMontyHall';
 import SpringCaching from './posts/SpringCaching';
 import K8sSpringboot from './posts/K8sSpringboot';
 import K8sTLS from './posts/K8sTLS';
+import K8sPostgres from './posts/K8sPostgres'
 import { useEffect } from "react";
 
 var components = {
@@ -19,7 +20,8 @@ var components = {
     'survivormontyhall': SurvivorMontyHall,
     'springcaching': SpringCaching,
     'k8sspringboot': K8sSpringboot,
-    'k8stls': K8sTLS
+    'k8stls': K8sTLS,
+    'k8srds': K8sPostgres
 }
 
 function Post() {

@@ -89,7 +89,7 @@ div.footer-container {
 
 @media (min-width: 1200px) {
   div.footer-container {
-    padding-top: 60px;
+    padding-top: 95px;
   }
 }
 
@@ -119,8 +119,22 @@ h3.footer-brand {
 
 div.bio {
   max-width: 1000px;
+}
+
+div.bio-col {
   padding-left: 10%;
   padding-right: 10%;
+}
+
+@media (min-width: 767px) {
+  div.bio-col {
+    border-right: 1px solid;
+    padding-right: 5%;
+  }
+}
+
+ul.favorite-links-ul {
+  padding-inline-start: 15px;
 }
 
 h1.name-title {
@@ -286,4 +300,8 @@ div.modal {
 
 .monty-hall-play-again {
   padding-left: 15px;
+}
+
+.favorite-links-container {
+  text-align: left;
 }
