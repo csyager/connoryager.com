@@ -7,6 +7,7 @@ import Post from './components/Post';
 import Projects from './components/Projects';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import MinecraftServerControls from './components/MinecraftServerControls';
 import {
   HashRouter as Router,
   Switch,
@@ -29,6 +30,9 @@ function App() {
               <Route path="/projects/:filename" children={<Project />} />
               <Route path="/projects">
                 <Projects />
+              </Route>
+              <Route path="/minecraft">
+                <MinecraftServerControls />
               </Route>
               <Route path="/">
                 <Home />

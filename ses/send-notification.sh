@@ -1,4 +1,5 @@
 #!/bin/bash
+# usage:  ./send-notification.sh --title "TITLE" --url "url"
 
 while [[ $# -gt 0 ]]; do
     key="$1"
