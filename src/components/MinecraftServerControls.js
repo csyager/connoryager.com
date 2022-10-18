@@ -131,7 +131,26 @@ function ServerStateMessage() {
             );
     }, []);
 
-
+    useEffect(() => {
+        if (serverState !== "running" && serverState !== "stopped" && serverState !== "") {
+            const interval = setInterval(() => {
+                const requestOptions = {
+                    method: 'GET'
+                };
+                fetch(MINECRAFT_SERVER_STATE_URL, requestOptions)
+                    .then(res => res.json())
+                    .then(
+                        (result) => {
+                            if (serverState !== result["state"]) {
+                                setServerState(result["state"]);
+                                setPublicIp(result["publicIp"]);
+                            }
+                        }
+                    )
+            }, 5000);
+            return () => clearInterval(interval);
+        }
+    }, [serverState])
 
     if (loading) {
         return (
@@ -161,7 +180,10 @@ function ServerStateMessage() {
             )
         } else {
             return (
-                <h3>Server is <b>{serverState}</b></h3>
+                <>
+                    <h3>Server is <b>{serverState}</b></h3><br />
+                    <PulseLoader /><br />
+                </>
             )
         }
     }
