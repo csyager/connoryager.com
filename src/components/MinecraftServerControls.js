@@ -297,7 +297,7 @@ function GettingStarted() {
                     <li>On PC:  Find this in your start menu.</li>
                 </ul>
                 <li>Click play to launch the game (make sure you're using version 1.19)</li>
-                <li>When the game loads, click multiplayer.  If you've added the server already, highlight it by clicking on it.  If you haven't added the server, click "Add Server."</li>
+                <li>When the game loads, click multiplayer.  If you've added the server already, highlight it by clicking on it and click "Edit".  If you haven't added the server, click "Add Server."</li>
                 <li>Paste the IP address above into the Address field and click Connect.</li>
             </ol>
         </div>
