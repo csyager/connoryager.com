@@ -4,6 +4,7 @@ import StopMotionProject from "./projects/StopMotion";
 import STSPaperProject from "./projects/STSPaper";
 import RtxStockBotProject from "./projects/RtxStockBot";
 import TennisMLProject from "./projects/TennisML";
+import Powerranks from "./projects/Powerranks";
 import { useEffect } from "react";
 
 var components = {
@@ -12,6 +13,7 @@ var components = {
     'powerofdifference': PowerOfDifferenceProject,
     'stockbot': RtxStockBotProject,
 	'tennisml': TennisMLProject,
+    'powerranks': Powerranks
 }
 
 function Project() {
