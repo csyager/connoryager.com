@@ -1,3 +1,4 @@
+import '../style/minecraft.css';
 import { useEffect, useState } from "react";
 import PulseLoader from "react-spinners/PulseLoader";
 import ClipLoader from "react-spinners/ClipLoader";

@@ -1,0 +1,53 @@
+div.post-header-img {
+  min-width: 30%;
+  float: left;
+  padding-right: 30px;
+}
+
+div.post-img-right {
+  min-width: 30vh;
+  float: right;
+  padding-left: 30px;
+}
+
+div.post-img-left {
+  min-width: 30vh;
+  float: left;
+  padding-right: 30px;
+}
+
+img.post-img {
+  margin-bottom: 1rem;
+}
+
+img.post-img-bordered {
+  border: 2px;
+  border-style: solid;
+}
+
+figure {
+  display: table;
+  width: fit-content;
+}
+
+figcaption.figure-caption {
+  padding-left: 60px;
+  min-width: 30vh;
+  max-width: fit-content;
+}
+
+p.post-body {
+  justify-content: left;
+}
+
+.monty-hall-button-text {
+  font-size: 30px;
+}
+
+.monty-hall-button-col {
+  padding-top: 15px;
+}
+
+.monty-hall-play-again {
+  padding-left: 15px;
+}

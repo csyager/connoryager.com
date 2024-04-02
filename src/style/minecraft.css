@@ -1,0 +1,148 @@
+.minecraft-guide-container {
+  text-align: left;
+}
+
+.minecraft-inline {
+  height: 35px;
+  width: 35px;
+}
+
+.minecraft-yield {
+  height: 40px;
+  width: 40px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.crafting-table-container {
+  text-align: left;
+  background-color: #C6C6C6;
+  height: 150px;
+  width: 300px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top-color: rgb(219, 219, 219);
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-right-color: rgb(91, 91, 91);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-bottom-color: rgb(91, 91, 91);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(219, 219, 219);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+.crafting-table-grid {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.crafting-table-row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.crafting-table-col {
+  background-color: #8B8B8B;
+  border-top-color: rgb(55, 55, 55);
+  height: 40px;
+  width: 40px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(55, 55, 55);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+.crafting-table-yield {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 30px;
+  background-color: #8B8B8B;
+  border-top-color: rgb(55, 55, 55);
+  height: 50px;
+  width: 50px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(55, 55, 55);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+.crafting-table-yield-size {
+    position: relative;
+    right: -32px;
+    bottom: 17px;
+    font-weight: normal !important;
+    color: #FFF !important;
+    text-shadow: 2px 2px 0 #3f3f3f;
+    filter: dropshadow(color=#3F3F3F,offx=2,offy=2);
+    z-index: 2;
+}
+
+.crafting-table-arrow {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 45px;
+  height: 30px;
+}
+
+.furnace-container {
+  text-align: left;
+  background-color: #C6C6C6;
+  height: 150px;
+  width: 215px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top-color: rgb(219, 219, 219);
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-right-color: rgb(91, 91, 91);
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-bottom-color: rgb(91, 91, 91);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-left-color: rgb(219, 219, 219);
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+
+.smelting-fire {
+  margin-left: auto;
+}

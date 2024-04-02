@@ -1,3 +1,4 @@
+import '../style/navbar.css';
 import {
     Link
 } from "react-router-dom";
@@ -44,6 +45,9 @@ function Navbar(props) {
                     <li className="nav-item">
                         <NavLink to="/posts">Posts</NavLink>
                     </li> 
+                    <li className="nav-item">
+                        <NavLink to="/about">About</NavLink>
+                    </li>
                     <li className="nav-item">
                         <NavLink to="/projects">Projects</NavLink>
                     </li>  

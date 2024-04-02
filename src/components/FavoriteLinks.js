@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function FavoriteLinks() {
 
     return(
-        <div className="container favorite-links-container">
+        <div className="favorite-links-container">
             <h3>Connor's Favorite Links</h3>
             <hr />
             <ul className="favorite-links-ul">

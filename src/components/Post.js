@@ -1,3 +1,4 @@
+import '../style/post.css';
 import { useParams } from "react-router-dom";
 import GreekRhoPost from "./posts/Greekrho";
 import ReactAppS3Post from "./posts/ReactAppS3";

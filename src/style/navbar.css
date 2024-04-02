@@ -1,0 +1,25 @@
+img.navbar-icon {
+    margin-right: 10px;
+}
+  
+a.nav-link {
+    font-size: 20px;
+}
+
+@media(prefers-color-scheme: dark) {
+    nav.navbar {
+      background-color: #343a40!important;
+    }
+    a.nav-link.active {
+        color: #fff!important;
+    }
+    a.nav-link {
+        color: #ffffff80!important;
+    }
+    a.navbar-brand {
+        color: #fff!important;
+    }
+    button.subscribe-modal-btn {
+        color: #fff!important;
+    }
+}
