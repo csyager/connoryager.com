@@ -11,7 +11,7 @@ function Home() {
                 <div className="home-intro">
                     <div className="row">
                         <div className="col-xl-4">
-                            <img className="img-thumbnail img-fluid img-profile" src={profile} />
+                            <img className="img-thumbnail img-fluid img-profile" src={profile} alt="profile"/>
                         </div>
                         <div className="col-xl-8">
                             <h1>Hi, I'm Connor</h1>

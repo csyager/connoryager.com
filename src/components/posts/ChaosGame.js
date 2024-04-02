@@ -6,7 +6,7 @@ import chaosSquares from '../../images/posts/chaos_squares.png';
 import chaosTriangles from '../../images/posts/chaos_triangles.png';
 import { HashLink as Link } from 'react-router-hash-link';
 
-function GreekRhoPost() {
+export default function ChaosGamePost() {
     return (
         <div className="container post-content">
             <h1 className="display-4">Chaos Game</h1>
@@ -58,5 +58,3 @@ function GreekRhoPost() {
         </div>
     );
 }
-
-export default GreekRhoPost;

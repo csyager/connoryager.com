@@ -78,6 +78,7 @@ function Powerranks() {
             </MathJaxContext>
             <p>Based on the calculated outcomes, if the expected team wins, they will be awarded points based on their probability of victory entering the match.  This value is calculated as a scalar multiplied by the probability.  The losing team's Elo will decrease by the same value.</p>
             <MathJaxContext>
+                { /* eslint-disable-next-line */ }
                 <div className="d-flex justify-content-center mb-3"><MathJax dynamic inline>{"\\(new\~elo = scalar * win\~probability\\)"}</MathJax></div>
             </MathJaxContext>
             <p>Using this scheme, teams who are favored to win and do win are rewarded with a smaller number of points than teams that are expected to lose but end up winning (an upset).  On the other hand, teams that are predicted to lose and do lose are not penalized as harshly as teams that are expected to win but end up losing.</p>

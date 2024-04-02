@@ -1,9 +1,12 @@
+import {Link} from 'react-router-dom';
+
 function About() {
     return (
         <>
             <div className="container">
                 <h1>About me</h1>
                 <div className="mb-4">
+                    { /* eslint-disable-next-line */ }
                     <code className="bg-secondary mb-3">/* Last updated Apr 1, 2024 */</code>
                     <p>
                         Hi, I'm Connor Yager.  I'm a software engineer at Amazon Web Services, living in New York.  I've been working as a software engineer since 2020, and before that was a C.S. major and Physics minor at UVA's School of Engineering and Applied Sciences.
@@ -21,7 +24,7 @@ function About() {
                 <div className="mb-3">
                 <h2>What I'm doing</h2>
                 <ul>
-                    <li><a href="https://aws.amazon.com/fargate/">AWS Fargate</a></li>
+                    <li><Link to="/posts/fargate">AWS Fargate</Link></li>
                     <li>Exploring the city</li>
                 </ul>
                 </div>
@@ -42,7 +45,7 @@ function About() {
                     <h2>Where I'm going</h2>
                     <ul>
                         <li>Stowe, VT</li>
-                        <li>Cambridge, MA</li>
+                        <li><Link to="/albums/2024-03-30-cambridge">Cambridge, MA</Link></li>
                     </ul>
                 </div>
             </div>

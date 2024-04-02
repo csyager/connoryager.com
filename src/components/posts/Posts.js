@@ -1,13 +1,14 @@
-import GreekRhoPost from "./posts/Greekrho";
-import ReactAppS3Post from "./posts/ReactAppS3";
-import ReactRouterPost from "./posts/ReactRouter";
-import CryptoMiningPost from "./posts/CryptoMining";
-import ChaosGamePost from './posts/ChaosGame';
-import SurvivorMontyHall from './posts/SurvivorMontyHall';
-import SpringCaching from './posts/SpringCaching';
-import K8sSpringboot from './posts/K8sSpringboot';
-import K8sTLS from './posts/K8sTLS';
-import K8sPostgres from './posts/K8sPostgres'
+import GreekRhoPost from "./Greekrho";
+import ReactAppS3Post from "./ReactAppS3";
+import ReactRouterPost from "./ReactRouter";
+import CryptoMiningPost from "./CryptoMining";
+import ChaosGamePost from "./ChaosGame";
+import SurvivorMontyHall from './SurvivorMontyHall';
+import SpringCaching from './SpringCaching';
+import K8sSpringboot from './K8sSpringboot';
+import K8sTLS from './K8sTLS';
+import K8sPostgresPost from './K8sPostgres'
+import FargatePost from "./Fargate";
 
 export {
     GreekRhoPost,
@@ -19,5 +20,6 @@ export {
     SpringCaching,
     K8sSpringboot,
     K8sTLS,
-    K8sPostgres
+    K8sPostgresPost,
+    FargatePost
 }

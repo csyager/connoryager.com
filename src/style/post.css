@@ -31,7 +31,6 @@ figure {
 }
 
 figcaption.figure-caption {
-  padding-left: 60px;
   min-width: 30vh;
   max-width: fit-content;
 }
