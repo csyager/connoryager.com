@@ -32,7 +32,7 @@ function About() {
                     <h2>What I'm reading</h2>
                     <ul>
                         <li>Frank Herbert's <i>Dune</i> series</li>
-                        <li><i><a href="https://beej.us/guide/bgnet/">Beej's Guide to Network Programming</a></i></li>
+                        <li><i><a href="https://beej.us/guide/bgnet/" target="_blank" rel="noreferrer">Beej's Guide to Network Programming</a></i></li>
                     </ul>
                 </div>
                 <div className="mb-3">
