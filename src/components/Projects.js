@@ -1,3 +1,6 @@
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 import Card from './Card';
 import stopmotionImage from '../images/projects/stopmotion.png';
 import powerofdifferenceImage from '../images/projects/powerofdifference.png';
@@ -5,8 +8,17 @@ import rtx3070Image from '../images/projects/rtx3070.png';
 import scikitLearnImage from '../images/projects/scikit-learn.png';
 import powerranksImage from '../images/projects/powerranks.png';
 
+import {
+    StopMotionProject,
+    STSPaperProject,
+    PowerOfDifferenceProject,
+    RtxStockBotProject,
+    TennisMLProject,
+    Powerranks
+  } from "./projects/Projects";
 
-export default function ProjectsIndex() {
+
+function ProjectsIndex() {
     return (
         <div className="container">
             <h1>Projects</h1>
@@ -25,5 +37,23 @@ export default function ProjectsIndex() {
                     text='My fourth year engineering thesis on open source and proprietary software models, with an emphasis on AI development' />
             </div>
         </div>
+    )
+}
+
+export default function Projects() {
+    const pathname = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname])
+    return (
+        <Routes>
+            <Route index element={<ProjectsIndex />} />
+            <Route path="stopmotion" element={<StopMotionProject />} />
+            <Route path="stspaper" element={<STSPaperProject />} />
+            <Route path="powerofdifference" element={<PowerOfDifferenceProject/>} />
+            <Route path="stockbot" element={<RtxStockBotProject />} />
+            <Route path="tennisml" element={<TennisMLProject />} />
+            <Route path="powerranks" element={<Powerranks />} />
+        </Routes>
     )
 }

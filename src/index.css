@@ -178,8 +178,10 @@ img.card-img-top {
   }
 }
 
-
-@media (min-width: 576px) {
+.card-columns {
+  column-count: 1;
+}
+@media (min-width: 1200px) {
   .card-columns {
       column-count: 2;
       padding-right: 15px;
