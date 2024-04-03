@@ -1,22 +1,7 @@
 import { PostList, PostListEntry } from './PostList';
-import { useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import {
-    GreekRhoPost,
-    ReactAppS3Post,
-    ReactRouterPost,
-    CryptoMiningPost,
-    ChaosGamePost,
-    SurvivorMontyHall,
-    SpringCaching,
-    K8sSpringboot,
-    K8sTLS,
-    K8sPostgresPost,
-    FargatePost
-} from './posts/Posts';
 import '../style/post.css';
 
-function PostsIndex() {
+export default function PostsIndex() {
     return (
         <div className="container">
             <h1>Posts</h1>
@@ -45,30 +30,3 @@ function PostsIndex() {
         </div>
     )
 }
-
-function Posts() {
-    // reset scroll on page change
-    const pathname = useLocation();
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname])
-
-    return (
-        <Routes>
-            <Route index element={<PostsIndex />} />
-            <Route path="greekrho" element={<GreekRhoPost />} />
-            <Route path="reactapps3" element={<ReactAppS3Post />} />
-            <Route path="reactrouter" element={<ReactRouterPost />} />
-            <Route path="cryptomining" element={<CryptoMiningPost />} />
-            <Route path="chaosgame" element={<ChaosGamePost />} />
-            <Route path="survivormontyhall" element={<SurvivorMontyHall />} />
-            <Route path="springcaching" element={<SpringCaching />} />
-            <Route path="k8sspringboot" element={<K8sSpringboot />} />
-            <Route path="k8stls" element={<K8sTLS />} />
-            <Route path="k8srds" element={<K8sPostgresPost />} />
-            <Route path="fargate" element={<FargatePost />} />
-        </Routes>
-    )
-}
-
-export default Posts;

@@ -4,18 +4,9 @@ import powerofdifferenceImage from '../images/projects/powerofdifference.png';
 import rtx3070Image from '../images/projects/rtx3070.png';
 import scikitLearnImage from '../images/projects/scikit-learn.png';
 import powerranksImage from '../images/projects/powerranks.png';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import { useEffect } from "react";
-import {
-    StopMotionProject,
-    STSPaperProject,
-    PowerOfDifferenceProject,
-    RtxStockBotProject,
-    TennisMLProject,
-    Powerranks
-} from "./projects/Projects";
 
-function ProjectsIndex() {
+
+export default function ProjectsIndex() {
     return (
         <div className="container">
             <h1>Projects</h1>
@@ -36,24 +27,3 @@ function ProjectsIndex() {
         </div>
     )
 }
-
-function Projects() {
-    // reset scroll on page change
-    const pathname = useLocation();
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [pathname])
-    return (
-        <Routes>
-            <Route index element={<ProjectsIndex />} />
-            <Route path="stopmotion" element={<StopMotionProject />} />
-            <Route path="stspaper" element={<STSPaperProject />} />
-            <Route path="powerofdifference" element={<PowerOfDifferenceProject/>} />
-            <Route path="stockbot" element={<RtxStockBotProject />} />
-            <Route path="tennisml" element={<TennisMLProject />} />
-            <Route path="powerranks" element={<Powerranks />} />
-        </Routes>
-    )
-}
-
-export default Projects;
