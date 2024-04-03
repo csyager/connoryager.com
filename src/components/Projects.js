@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import CatchAll from './CatchAll';
 
 import Card from './Card';
 import stopmotionImage from '../images/projects/stopmotion.png';
@@ -21,7 +22,7 @@ import {
 function ProjectsIndex() {
     return (
         <div className="container">
-            <h1>Projects</h1>
+            <h1 className="display-4">Projects</h1>
             <div className="card-columns">
                 <Card image={powerranksImage} title="LoL Powerranks Project" filename='powerranks' date="Oct 29, 2023"
                     text="A hackathon project that creates a ranking system for League of Legends teams." />
@@ -54,6 +55,7 @@ export default function Projects() {
             <Route path="stockbot" element={<RtxStockBotProject />} />
             <Route path="tennisml" element={<TennisMLProject />} />
             <Route path="powerranks" element={<Powerranks />} />
+            <Route path="*" element={<CatchAll />} />
         </Routes>
     )
 }

@@ -1,6 +1,7 @@
 import { PostList, PostListEntry } from './PostList';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import CatchAll from './CatchAll';
 import '../style/post.css';
 
 import {
@@ -20,7 +21,7 @@ import {
 function PostsIndex() {
     return (
         <div className="container">
-            <h1>Posts</h1>
+            <h1 className="display-4">Posts</h1>
 
             <div>
                 <PostList title="2024">
@@ -67,6 +68,7 @@ export default function Posts() {
             <Route path="k8stls" element={<K8sTLS />} />
             <Route path="k8srds" element={<K8sPostgresPost />} />
             <Route path="fargate" element={<FargatePost />} />
+            <Route path="*" element={<CatchAll />} />
         </Routes>
     )
 }

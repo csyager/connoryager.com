@@ -4,7 +4,7 @@ function About() {
     return (
         <>
             <div className="container">
-                <h1>About me</h1>
+                <h1 className="display-4">About me</h1>
                 <div className="mb-4">
                     { /* eslint-disable-next-line */ }
                     <code className="bg-secondary mb-3">/* Last updated Apr 1, 2024 */</code>

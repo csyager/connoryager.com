@@ -14,7 +14,7 @@ function Home() {
                             <img className="img-thumbnail img-fluid img-profile" src={profile} alt="profile"/>
                         </div>
                         <div className="col-xl-8">
-                            <h1>Hi, I'm Connor</h1>
+                            <h1 className="display-4">Hi, I'm Connor</h1>
                             <p className="tagline">I'm a software engineer living and working in New York.  Welcome to my blog.</p>
                         </div>
                     </div>

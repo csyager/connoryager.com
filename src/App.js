@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Albums from './components/Albums';
 import Footer from './components/Footer';
 import MinecraftServerControls from './components/MinecraftServerControls';
+import CatchAll from './components/CatchAll';
 import {
   BrowserRouter as Router,
   Routes,
@@ -52,6 +53,7 @@ function App() {
             <Route path="projects/*" element={<Projects />} />
             <Route path="albums/*" element={<Albums />} />
             <Route path="minecraft" element={<MinecraftServerControls />} />
+            <Route path="*" element={<CatchAll />} />
           </Route>    
         </Routes>
       </Router>
