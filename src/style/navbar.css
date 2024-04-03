@@ -1,3 +1,5 @@
+/* navbar.css */
+
 img.navbar-icon {
     margin-right: 10px;
 }
@@ -13,25 +15,34 @@ button.subscribe-modal-btn {
     padding-left: 0px;
   }
   
-  button.subscribe-modal-btn:hover {
-    color: black;
+button.subscribe-modal-btn:hover {
+    color: var(--nav-brand-color);
     text-decoration: none;
-  }
+}
 
-@media(prefers-color-scheme: dark) {
-    nav.navbar {
-      background-color: #343a40!important;
-    }
-    a.nav-link.active {
-        color: #fff!important;
-    }
-    a.nav-link {
-        color: #ffffff80!important;
-    }
-    a.navbar-brand {
-        color: #fff!important;
-    }
-    button.subscribe-modal-btn {
-        color: #fff!important;
-    }
+nav.navbar {
+    background-color: var(--header-background)
+}
+
+a.navbar-brand {
+    color: var(--nav-brand-color);
+}
+
+button.subscribe-modal-btn {
+    color: var(--nav-brand-color);
+}
+
+a.nav-link.active {
+    color: var(--nav-link-active-color);
+}
+a.nav-link {
+    color: var(--nav-link-color);
+}
+
+.navbar-toggler-icon {
+    color: var(--nav-link-color);
+}
+
+.darkModeToggle {
+    margin-top: auto;
 }

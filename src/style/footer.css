@@ -1,3 +1,5 @@
+/* footer.css */
+
 div.footer-container {
   padding-top: 170px;
 }
@@ -38,9 +40,7 @@ h3.footer-brand {
   max-width: 80%;
 }
 
-@media(prefers-color-scheme: dark) {
-  footer.footer {
-    background-color: #343a40!important;
-    color: #fff!important;
-  }
+footer.footer {
+  background-color: var(--header-background);
+  color: var(--color);
 }

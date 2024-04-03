@@ -1,5 +1,60 @@
+/* index.css */
+
 html, #root, .App {
   height: 100%;
+}
+
+/* automatic/manual light mode */
+:root, :root.light {
+  --background-color: #ffffff;
+  --color: #212529;
+  --hr-color: #0000001a;
+  --text-muted-color: #6c757d;
+  --margin-color: #CCCCCC;
+  --card-background: #ffffff;
+  --modal-background: #fff;
+  --header-background: #f8f9fa;
+  --nav-brand-color: #000000e6;
+  --nav-link-color: #00000080;
+  --nav-link-active-color: #000000e6;
+  --recent-posts-time-color: #666;
+  --highlighted-projects-card-color: #f9f9f9;
+}
+
+/* automatic dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1f1f1f;
+    --color: #ffffff;
+    --hr-color: #ffffff;
+    --text-muted-color: #a8adb2;
+    --margin-color: #494949;
+    --card-background: #3c3c3c;
+    --modal-background: #212529;
+    --header-background: #343a40;
+    --nav-brand-color: #fff;
+    --nav-link-color: #ffffff80;
+    --nav-link-active-color: #fff;
+    --recent-posts-time-color: #5eddac;
+    --highlighted-projects-card-color: #2c2c2c;
+  }
+}
+
+/* manual dark mode */
+:root.dark {
+  --background-color: #1f1f1f;
+  --color: #ffffff;
+  --hr-color: #ffffff;
+  --text-muted-color: #a8adb2!important;
+  --margin-color: #494949;
+  --card-background: #3c3c3c;
+  --modal-background: #212529;
+  --header-background: #343a40!important;
+  --nav-brand-color: #fff!important;
+  --nav-link-color: #ffffff80!important;
+  --nav-link-active-color: #fff!important;
+  --recent-posts-time-color: #5eddac;
+  --highlighted-projects-card-color: #2c2c2c;
 }
 
 body {
@@ -11,6 +66,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   font-size: 1.3rem;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 
 div.app-container {
@@ -24,24 +81,18 @@ div.app-container {
   
 }
 
-@media(prefers-color-scheme: dark) {
-  body {
-    background-color: #1f1f1f;
-    color: #ffffff;
-  }
-
-  hr {
-    border-top-color: #ffffff;
-  }
-
-  .table {
-    color: #ffffff;
-  }
-
-  .text-muted {
-    color: #a8adb2;
-  }
+hr {
+  border-top-color: var(--hr-color);
 }
+
+.table {
+  color: var(--color);
+}
+
+.text-muted {
+  color: var(--text-muted-color)!important;
+}
+
 
 div.container {
   margin-top: 5%;
@@ -92,14 +143,8 @@ div.code-block button {
 }
 
 div.left-margin, div.right-margin {
-  background-color: #CCCCCC;;
+  background-color: var(--margin-color);
   z-index: -1;
-}
-
-@media(prefers-color-scheme: dark) {
-  div.left-margin, div.right-margin {
-    background-color: #494949;
-  }
 }
 
 div.full-height {
@@ -171,11 +216,8 @@ img.card-img-top {
   max-width: 20rem;
 }
 
-@media(prefers-color-scheme: dark) {
-  .card {
-    background-color: #181818;
-    color: #ffffff;
-  }
+.card {
+  background-color: var(--card-background);
 }
 
 .card-columns {
@@ -213,7 +255,6 @@ div.tennis-form-container {
 	}
 }
 
-
 div.modal {
   padding-right: 15px !important;
 }
@@ -222,12 +263,8 @@ div.modal {
   overflow: auto;
 }
 
-@media(prefers-color-scheme: dark) {
-  div.modal-content {
-    background-color: #212529;
-    color: #ffffff;
-  }
-  button.close {
-    color: #ffffff;
-  }
+div.modal-content {
+  background-color: var(--modal-background)
 }
+
+

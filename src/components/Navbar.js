@@ -3,7 +3,13 @@ import {
     Link
 } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import DarkModeToggle from './DarkModeToggle';
 import icon from '../images/icon.png';
+
+import {
+    faBars
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function NavLink(props) {
     const isActive = "/" + useLocation()["pathname"].split("/")[1] === props.to;
@@ -28,13 +34,13 @@ function NavLink(props) {
 function Navbar(props) {
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light px-4 px-md-3">
+        <nav className="navbar navbar-expand-lg px-4 px-md-3">
             <Link to="/" className="navbar-brand" href="home.html">
                 <img src={icon} className="navbar-icon" width="35" height="35" alt="" />
                 connoryager.com
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+                <FontAwesomeIcon icon={faBars} aria-hidden={true} size="lg" className="navbar-toggler-icon"/>
             </button>
             
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,8 +59,11 @@ function Navbar(props) {
                     </li>  
                 </ul>
                 <ul className="navbar-nav ml-auto">
-                    <li className="nav-item">
+                    <li className="nav-item mt-auto mb-auto">
                         <button className="btn btn-link subscribe-modal-btn" data-toggle="modal" data-target="#subscribeModal">Subscribe to email newsletter</button>
+                    </li>
+                    <li className="nav-item mt-auto mb-auto">
+                        <DarkModeToggle />
                     </li>
                 </ul>
 

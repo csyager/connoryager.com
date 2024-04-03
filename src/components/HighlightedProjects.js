@@ -41,7 +41,7 @@ export default function HighlightedProjects() {
                 </div>
             </div>
             <div className="row">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 mb-3">
                 <HighlightedProjectEntry 
                     date="2024" 
                     title="LoL Powerranking Application" 
@@ -52,7 +52,7 @@ export default function HighlightedProjects() {
                     <HighlightedProjectEntryButton to="https://github.com/csyager/lolpowerranks-ranking-service" external>Source code</HighlightedProjectEntryButton>
                 </HighlightedProjectEntry>
                 </div>
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 mb-3">
                 <HighlightedProjectEntry
                     date="2020"
                     title="GreekRho"
