@@ -14,11 +14,7 @@ import {
   Routes,
   Route,
   Outlet,
-  useLocation
 } from "react-router-dom";
-
-
-import CambridgeAlbum from "./components/albums/2024_3_30_cambridge";
 
 function Layout() {
   return (
