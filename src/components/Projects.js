@@ -10,6 +10,7 @@ import scikitLearnImage from '../images/projects/scikit-learn.png';
 import powerranksImage from '../images/projects/powerranks.png';
 
 import {
+    ChatServer,
     StopMotionProject,
     STSPaperProject,
     PowerOfDifferenceProject,
@@ -24,6 +25,8 @@ function ProjectsIndex() {
         <div className="container">
             <h1 className="display-4">Projects</h1>
             <div className="card-columns">
+                <Card title="Chat server" filename='chatserver' date="May 30, 2024"
+                    text="A chat server." />
                 <Card image={powerranksImage} title="LoL Powerranks Project" filename='powerranks' date="Oct 29, 2023"
                     text="A hackathon project that creates a ranking system for League of Legends teams." />
 				<Card image={scikitLearnImage} title="ML Tennis Match Predictor" filename='tennisml' date="Sep 14, 2021"
@@ -55,6 +58,7 @@ export default function Projects() {
             <Route path="stockbot" element={<RtxStockBotProject />} />
             <Route path="tennisml" element={<TennisMLProject />} />
             <Route path="powerranks" element={<Powerranks />} />
+            <Route path="chatserver" element={<ChatServer />} />
             <Route path="*" element={<CatchAll />} />
         </Routes>
     )
