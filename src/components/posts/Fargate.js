@@ -1,7 +1,7 @@
 import fargate from '../../images/posts/fargate.png';
 export default function FargatePost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Serverless Containers on Fargate</h1>
             <h5 className="text-muted">Apr 2, 2024</h5><br />
             <div className="post-header-img" style={{maxWidth: "150px"}}>

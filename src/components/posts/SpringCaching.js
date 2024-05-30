@@ -75,7 +75,7 @@ const applicationYaml = `redis:
 
 function SpringCaching() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Adding a Redis Cache to Your Spring Boot Service</h1>
             <h5 className="text-muted">May 1, 2022</h5><br />
 

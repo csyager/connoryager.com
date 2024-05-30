@@ -135,7 +135,7 @@ const curl = `$ curl https://api.connoryager.com/user-service/user/1
 
 function K8sPostgresPost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">EKS Part III:  Adding an RDS Instance Using ACK</h1>
             <h5 className="text-muted">Oct 7, 2022</h5><br />
             

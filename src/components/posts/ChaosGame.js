@@ -8,7 +8,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 export default function ChaosGamePost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Chaos Game</h1>
             <h5 className="text-muted">Jun 26, 2021</h5><br />
             <p><img src={githubImage} alt="github" className="github-intext" /> This project is on Github!  Click <a href="https://github.com/csyager/triangles" target="_blank" rel="noreferrer">here</a> to view!</p>

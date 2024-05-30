@@ -3,7 +3,7 @@ import githubImage from '../../images/github.png';
 
 function StopMotionProject() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Arduino Uno Stop Motion Camera</h1>
             <h5 className="text-muted">Apr 23, 2021</h5><br />
             <p><img src={githubImage} alt="github" className="github-intext" /> This project is on Github!  Click <a href="https://github.com/csyager/arduino-stop-motion" target="_blank" rel="noreferrer">here</a> to view!</p>

@@ -143,7 +143,7 @@ OK
 
 function K8sSpringbootPost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Containerizing a Java Spring Boot Service for EKS</h1>
             <h5 className="text-muted">Aug 23, 2022</h5><br />
             <div className="post-header-img">

@@ -15,38 +15,39 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
+import { useState } from 'react';
 
-function Layout() {
+function Layout(props) {
   return (
     <>
       <div className="row no-gutters full-height">
-        <div className="col-2 left-margin d-none d-md-flex"></div>
-        <div className="col-12 col-md-8 shadow-lg">
+        <div className="col-2 left-margin d-none d-xl-flex"></div>
+        <div className="col-12 col-xl-8 shadow-lg">
           <div className="app-container">
-              <Navbar active="Home" />
+              <Navbar active="Home" darkMode={props.darkMode} setDarkMode={props.setDarkMode} />
               <Outlet />
           </div>
           <Footer />
           {/* popup modal for subscribing to email notifications */}
           <SubscribeModal />  
         </div>
-        <div className="col-2 right-margin d-none d-md-flex"></div>
+        <div className="col-2 right-margin d-none d-xl-flex"></div>
       </div>
     </>
   )
 }
 
 function App() {
-
+  const [darkMode, setDarkMode] = useState(false);
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout darkMode={darkMode} setDarkMode={setDarkMode}/>}>
             <Route index element={<Home />} />
-            <Route path="posts/*" element={<Posts />} />
+            <Route path="posts/*" element={<Posts darkMode={darkMode} setDarkMode={setDarkMode}/>} />
             <Route path="about" element={<About />} />
-            <Route path="projects/*" element={<Projects />} />
+            <Route path="projects/*" element={<Projects darkMode={darkMode} setDarkMode={setDarkMode} />} />
             <Route path="albums/*" element={<Albums />} />
             <Route path="minecraft" element={<MinecraftServerControls />} />
             <Route path="*" element={<CatchAll />} />

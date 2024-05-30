@@ -1,4 +1,9 @@
 import {Link} from 'react-router-dom';
+import {
+    faFilePdf
+  } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Resume from './Resume.pdf';
 
 function About() {
     return (
@@ -17,6 +22,7 @@ function About() {
                     <p>
                         This site is where I will post my thoughts and experiences, as well as information about personal projects that I'm working on.  Please feel free to contact me using any of the methods below, and enjoy exploring the site!
                     </p>
+                    <a className="btn btn-primary" href={Resume} target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFilePdf} />&nbsp;&nbsp; Click here to view my resume</a>
                 </div>
 
                 <hr />

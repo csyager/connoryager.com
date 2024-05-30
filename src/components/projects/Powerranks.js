@@ -10,7 +10,7 @@ library.add(faGithub);
 function Powerranks() {
 
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">LoL Powerranking Application</h1>
             <h5 className="text-muted">Oct 29, 2023</h5><br />
             <p><FontAwesomeIcon icon={faGithub} /> This project is on Github!  Click the links below to view!</p>

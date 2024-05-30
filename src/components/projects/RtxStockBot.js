@@ -9,7 +9,7 @@ library.add(faGithub);
 
 function RtxStockBotProject() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Graphics Card Stock Bot</h1>
             <h5 className="text-muted">Apr 25, 2021</h5><br />
             <p><FontAwesomeIcon icon={faGithub} /> This project is on Github!  Click <a href="https://github.com/csyager/rtx-stock-bot" target="_blank" rel="noreferrer">here</a> to view!</p>

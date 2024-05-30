@@ -1,6 +1,6 @@
 function STSPaperProject() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">The Shifting Boundary Between Open-Source and Proprietary Software and its Role in the Future of AI</h1>
             <h5 className="text-muted">Jun 21, 2020</h5><br />
             <a href="https://libraetd.lib.virginia.edu/public_view/sf268572c" target="_blank" rel="noreferrer">Click here to view my thesis</a><br /><br />

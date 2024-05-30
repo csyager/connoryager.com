@@ -3,7 +3,7 @@ import githubImage from '../../images/github.png';
 
 function GreekRhoPost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">GreekRho Beta Launch</h1>
             <h5 className="text-muted">Sep 19, 2020</h5><br />
             <p><img src={githubImage} alt="github" className="github-intext" /> This project is on Github!  Click <a href="https://github.com/csyager/greeklink-core" target="_blank" rel="noreferrer">here</a> to view!</p>

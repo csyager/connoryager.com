@@ -3,7 +3,7 @@ import reactdefaultImage from '../../images/posts/reactdefault.png'
 
 function ReactPost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Hosting a React App on Amazon S3</h1>
             <h5 className="text-muted">Apr 25, 2021</h5><br />
             

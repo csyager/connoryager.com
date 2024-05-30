@@ -5,7 +5,7 @@ import MontyHallGame from "../MontyHallGame";
 
 function SurvivorMontyHall() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">Monty Hall and <i>Survivor</i>'s Do or Die Game</h1>
             <h5 className="text-muted">Dec 2, 2021</h5><br />
             

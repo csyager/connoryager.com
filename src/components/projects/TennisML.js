@@ -103,7 +103,7 @@ function PredictionForm() {
 
 function TennisMLProject() {
 	return (
-		<div className = "container post-content">
+		<div className = "post-content">
 			<h1 className="display-4">Tennis ML Predictor</h1>
 			<h5 className="text-muted">Sep 14, 2021</h5><br />
 			<p><FontAwesomeIcon icon={faGithub} /> This project is on Github!  Click <a href="https://github.com/csyager/tennis_ml" target="_blank" rel="noreferrer">here</a> to view!</p>

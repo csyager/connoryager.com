@@ -1,7 +1,7 @@
 
 function CryptoMiningPost() {
     return(
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">How to Mine Ethereum Using Phoenix Miner and Ethermine</h1>
             <h5 className="text-muted">Apr 26, 2021</h5><br />
             <p className="post-body">One of the more fun and interesting things that I've done over quarantine was build a gaming PC.  This was something I had been wanting to do for some time, but was intimidated by the costs of all of the components.  This problem was magnified by recent price surging for graphics cards, the component responsible for rendering images on the screen.  Demand has been particularly high lately because of the profitability of using the graphics card component to mine cryptocurrencies.  Cryptocurrency mining is a system of verifying transactions between other buyers and sellers of the currency, via the highly compute-intensive task of solving hash functions, which basically means brute-force searching for a particular cryptographic hash value.  Currently, the most profitable cryptocurrency for at-home miners is Ethereum.  DIY miners can make a few dollars a day, usually fewer than $5, by just running their PCs while not in use.  While a few dollars a day may not sound like much, over the course of the month you could make over $100, which eclipses the initial cost of the component within just a few months.  Essentially, the graphics card becomes a lucrative investment, even at the inflated rates.</p>

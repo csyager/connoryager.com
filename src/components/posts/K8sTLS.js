@@ -35,7 +35,7 @@ spec:
 
 function K8sTLSPost() {
     return (
-        <div className="container post-content">
+        <div className="post-content">
             <h1 className="display-4">EKS Part II:  TLS on the ALB Ingress</h1>
             <h5 className="text-muted">Aug 29, 2022</h5><br />
             

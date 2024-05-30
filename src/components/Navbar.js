@@ -3,7 +3,7 @@ import {
     Link
 } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import DarkModeToggle from './DarkModeToggle';
+import {DarkModeToggle} from './DarkModeToggle';
 import icon from '../images/icon.png';
 
 import {
@@ -63,7 +63,7 @@ function Navbar(props) {
                         <button className="btn btn-link subscribe-modal-btn" data-toggle="modal" data-target="#subscribeModal">Subscribe to email newsletter</button>
                     </li>
                     <li className="nav-item mt-auto mb-auto">
-                        <DarkModeToggle />
+                        <DarkModeToggle darkMode={props.darkMode} setDarkMode={props.setDarkMode}/>
                     </li>
                 </ul>
 

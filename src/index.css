@@ -74,13 +74,6 @@ div.app-container {
   margin-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
-  div.app-container {
-    margin-bottom: 0rem;
-  }
-  
-}
-
 hr {
   border-top-color: var(--hr-color);
 }

@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import GiscusComments from './GiscusComments';
 import CatchAll from './CatchAll';
 
 import Card from './Card';
@@ -44,7 +45,19 @@ function ProjectsIndex() {
     )
 }
 
-export default function Projects() {
+function ProjectLayout(props) {
+    return (
+        <div className="container">
+            {props.children}
+            <hr />
+            <div id="comments">
+            <GiscusComments darkMode={props.darkMode} />
+            </div>
+        </div>
+    )
+}
+
+export default function Projects(props) {
     const pathname = useLocation();
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -52,13 +65,13 @@ export default function Projects() {
     return (
         <Routes>
             <Route index element={<ProjectsIndex />} />
-            <Route path="stopmotion" element={<StopMotionProject />} />
-            <Route path="stspaper" element={<STSPaperProject />} />
-            <Route path="powerofdifference" element={<PowerOfDifferenceProject/>} />
-            <Route path="stockbot" element={<RtxStockBotProject />} />
-            <Route path="tennisml" element={<TennisMLProject />} />
-            <Route path="powerranks" element={<Powerranks />} />
-            <Route path="chatserver" element={<ChatServer />} />
+            <Route path="stopmotion" element={<ProjectLayout darkMode={props.darkMode}><StopMotionProject /></ProjectLayout>} />
+            <Route path="stspaper" element={<ProjectLayout darkMode={props.darkMode}><STSPaperProject /></ProjectLayout>} />
+            <Route path="powerofdifference" element={<ProjectLayout darkMode={props.darkMode}><PowerOfDifferenceProject/></ProjectLayout>} />
+            <Route path="stockbot" element={<ProjectLayout darkMode={props.darkMode}><RtxStockBotProject /></ProjectLayout>} />
+            <Route path="tennisml" element={<ProjectLayout darkMode={props.darkMode}><TennisMLProject /></ProjectLayout>} />
+            <Route path="powerranks" element={<ProjectLayout darkMode={props.darkMode}><Powerranks /></ProjectLayout>} />
+            <Route path="chatserver" element={<ProjectLayout darkMode={props.darkMode}><ChatServer /></ProjectLayout>} />
             <Route path="*" element={<CatchAll />} />
         </Routes>
     )

@@ -1,6 +1,7 @@
 import { PostList, PostListEntry } from './PostList';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import GiscusComments from "./GiscusComments";
 import CatchAll from './CatchAll';
 import '../style/post.css';
 
@@ -48,7 +49,19 @@ function PostsIndex() {
     )
 }
 
-export default function Posts() {
+function PostLayout(props) {
+    
+    
+    return(
+        <div className="container">
+            {props.children}
+            <hr />
+            <GiscusComments darkMode={props.darkMode} />
+        </div>
+    )
+}
+
+export default function Posts(props) {
     // reset scroll on page change
     const pathname = useLocation();
     useEffect(() => {
@@ -57,17 +70,17 @@ export default function Posts() {
     return (
         <Routes>
             <Route index element={<PostsIndex />} />
-            <Route path="greekrho" element={<GreekRhoPost />} />
-            <Route path="reactapps3" element={<ReactAppS3Post />} />
-            <Route path="reactrouter" element={<ReactRouterPost />} />
-            <Route path="cryptomining" element={<CryptoMiningPost />} />
-            <Route path="chaosgame" element={<ChaosGamePost />} />
-            <Route path="survivormontyhall" element={<SurvivorMontyHall />} />
-            <Route path="springcaching" element={<SpringCaching />} />
-            <Route path="k8sspringboot" element={<K8sSpringboot />} />
-            <Route path="k8stls" element={<K8sTLS />} />
-            <Route path="k8srds" element={<K8sPostgresPost />} />
-            <Route path="fargate" element={<FargatePost />} />
+            <Route path="greekrho" element={<PostLayout darkMode={props.darkMode}><GreekRhoPost /></PostLayout>} />
+            <Route path="reactapps3" element={<PostLayout darkMode={props.darkMode}><ReactAppS3Post /></PostLayout>} />
+            <Route path="reactrouter" element={<PostLayout darkMode={props.darkMode}><ReactRouterPost /></PostLayout>} />
+            <Route path="cryptomining" element={<PostLayout darkMode={props.darkMode}><CryptoMiningPost /></PostLayout>} />
+            <Route path="chaosgame" element={<PostLayout darkMode={props.darkMode}><ChaosGamePost /></PostLayout>} />
+            <Route path="survivormontyhall" element={<PostLayout darkMode={props.darkMode}><SurvivorMontyHall /></PostLayout>} />
+            <Route path="springcaching" element={<PostLayout darkMode={props.darkMode}><SpringCaching /></PostLayout>} />
+            <Route path="k8sspringboot" element={<PostLayout darkMode={props.darkMode}><K8sSpringboot /></PostLayout>} />
+            <Route path="k8stls" element={<PostLayout darkMode={props.darkMode}><K8sTLS /></PostLayout>} />
+            <Route path="k8srds" element={<PostLayout darkMode={props.darkMode}><K8sPostgresPost /></PostLayout>} />
+            <Route path="fargate" element={<PostLayout darkMode={props.darkMode}><FargatePost /></PostLayout>} />
             <Route path="*" element={<CatchAll />} />
         </Routes>
     )
