@@ -26,8 +26,8 @@ function ProjectsIndex() {
         <div className="container">
             <h1 className="display-4">Projects</h1>
             <div className="card-columns">
-                <Card title="Chat server" filename='chatserver' date="May 30, 2024"
-                    text="A chat server." />
+                <Card image="" title="Socket-Based Chat Server on Raspberry Pi" filename='chatserver' date="May 30, 2024"
+                    text="A lightweight chatroom application written in C and using Unix sockets and running on a Raspberry Pi Nano" />
                 <Card image={powerranksImage} title="LoL Powerranks Project" filename='powerranks' date="Oct 29, 2023"
                     text="A hackathon project that creates a ranking system for League of Legends teams." />
 				<Card image={scikitLearnImage} title="ML Tennis Match Predictor" filename='tennisml' date="Sep 14, 2021"

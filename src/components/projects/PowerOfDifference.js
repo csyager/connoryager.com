@@ -3,7 +3,7 @@ import githubImage from '../../images/github.png';
 
 function PowerOfDifferenceProject() {
     return (
-        <div className="post-content">
+        <div className="container">
             <h1 className="display-4">Power of Difference Survey</h1>
             <h5 className="text-muted">Jun 20, 2020</h5><br />
             <p><img src={githubImage} alt="github" className="github-intext" /> This project is on Github!  Click <a href="https://github.com/uva-cp-1920/The_Sum" target="_blank" rel="noreferrer">here</a> to view!</p>

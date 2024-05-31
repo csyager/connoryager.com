@@ -127,8 +127,8 @@ WantedBy=multi-user.target`;
 
 export default function ChatServer() {
     return (
-        <div className="container post-content">
-            <h1 className="display-4">Lightweight Chat Client on Raspberry Pi</h1>
+        <div className="post-content">
+            <h1 className="display-4">Socket-Based Chat Server on Raspberry Pi</h1>
             <h5 className="text-muted">May 30, 2024</h5><br />
             <p><img src={githubImage} alt="github" className="github-intext" /> This project is on Github!  Click <a href="https://github.com/csyager/chat-server" target="_blank" rel="noreferrer">here</a> to view!</p>
 
