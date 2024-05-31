@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+// eslint-disable-next-line
+import masonry from "masonry-layout";
 
 function HighlightedProjectEntryButton(props) {
     if (props.external) {
@@ -40,7 +42,17 @@ export default function HighlightedProjects() {
                     <Link to="projects" className="btn btn-secondary float-right">View all</Link>
                 </div>
             </div>
-            <div className="row">
+            <div className="row" data-masonry='{"percentPosition": true, "horizontalOrder": true}'>
+                <div className="col-12 col-lg-6 mb-3">
+                    <HighlightedProjectEntry
+                        date="2024"
+                        title="Socket-Based Chat Server on Raspberry Pi"
+                        text="A lightweight chatroom application written in C and using Unix sockets and running on a Raspberry Pi Nano."
+                    >
+                        <HighlightedProjectEntryButton to="projects/chatserver">Article</HighlightedProjectEntryButton>
+                        <HighlightedProjectEntryButton to="https://github.com/csyager/chat-server" external>Source code</HighlightedProjectEntryButton>
+                    </HighlightedProjectEntry>
+                </div>
                 <div className="col-12 col-lg-6 mb-3">
                 <HighlightedProjectEntry 
                     date="2024" 
