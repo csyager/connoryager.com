@@ -13,7 +13,7 @@ div.post-img-right {
 div.post-img-left {
   min-width: 30vh;
   float: left;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 img.post-img {
@@ -31,8 +31,9 @@ figure {
 }
 
 figcaption.figure-caption {
-  min-width: 30vh;
-  max-width: fit-content;
+  display: table-caption;
+  caption-side: bottom;
+  padding-top: 15px;
 }
 
 p.post-body {

@@ -9,6 +9,7 @@ import powerofdifferenceImage from '../images/projects/powerofdifference.png';
 import rtx3070Image from '../images/projects/rtx3070.png';
 import scikitLearnImage from '../images/projects/scikit-learn.png';
 import powerranksImage from '../images/projects/powerranks.png';
+import MoodMeter from '../images/projects/mood_meter.jpg';
 
 import {
     ChatServer,
@@ -17,7 +18,8 @@ import {
     PowerOfDifferenceProject,
     RtxStockBotProject,
     TennisMLProject,
-    Powerranks
+    Powerranks,
+    SoBack
   } from "./projects/Projects";
 
 
@@ -26,6 +28,8 @@ function ProjectsIndex() {
         <div className="container">
             <h1 className="display-4">Projects</h1>
             <div className="card-columns">
+                <Card image={MoodMeter} title="We're So Back - A mood-sharing web application" filename='soback' date="Jun 3, 2024"
+                    text="React and AWS SAM web application for sharing your mood with friends" />
                 <Card image="" title="Socket-Based Chat Server on Raspberry Pi" filename='chatserver' date="May 30, 2024"
                     text="A lightweight chatroom application written in C and using Unix sockets and running on a Raspberry Pi Nano" />
                 <Card image={powerranksImage} title="LoL Powerranks Project" filename='powerranks' date="Oct 29, 2023"
@@ -72,6 +76,7 @@ export default function Projects(props) {
             <Route path="tennisml" element={<ProjectLayout darkMode={props.darkMode}><TennisMLProject /></ProjectLayout>} />
             <Route path="powerranks" element={<ProjectLayout darkMode={props.darkMode}><Powerranks /></ProjectLayout>} />
             <Route path="chatserver" element={<ProjectLayout darkMode={props.darkMode}><ChatServer /></ProjectLayout>} />
+            <Route path="soback" element={<ProjectLayout darkMode={props.darkMode}><SoBack /></ProjectLayout>} />
             <Route path="*" element={<CatchAll />} />
         </Routes>
     )

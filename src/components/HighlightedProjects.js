@@ -46,6 +46,17 @@ export default function HighlightedProjects() {
                 <div className="col-12 col-lg-6 mb-3">
                     <HighlightedProjectEntry
                         date="2024"
+                        title="We're So Back - A Mood-Sharing Web Application"
+                        text="React and AWS SAM web application for sharing your mood with friends"
+                    >
+                        <HighlightedProjectEntryButton to="projects/soback">Article</HighlightedProjectEntryButton>
+                        <HighlightedProjectEntryButton to="https://github.com/csyager/we-are-so-back" external>Source code</HighlightedProjectEntryButton>
+                        <HighlightedProjectEntryButton to="https://soback.connoryager.com" external>App Link</HighlightedProjectEntryButton>
+                    </HighlightedProjectEntry>
+                </div>
+                <div className="col-12 col-lg-6 mb-3">
+                    <HighlightedProjectEntry
+                        date="2024"
                         title="Socket-Based Chat Server on Raspberry Pi"
                         text="A lightweight chatroom application written in C and using Unix sockets and running on a Raspberry Pi Nano."
                     >
