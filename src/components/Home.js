@@ -10,7 +10,7 @@ function Home() {
             <div className="container">
                 <div className="home-intro">
                     <div className="row">
-                        <div className="col-xl-4">
+                        <div className="container-xl col-xl-4">
                             <img className="img-thumbnail img-fluid img-profile" src={profile} alt="profile"/>
                         </div>
                         <div className="col-xl-8">

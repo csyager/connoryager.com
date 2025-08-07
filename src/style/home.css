@@ -1,10 +1,16 @@
 p.tagline {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 img.img-profile {
-    max-width: 150px;
+    /* max-width: 165px; */
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+	img.img-profile {
+		max-width: 165px;
+	}
 }
 
 time.recent-posts-time {

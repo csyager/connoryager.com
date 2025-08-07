@@ -274,38 +274,36 @@ function MontyHallGame() {
 
 
     return (
-        <div className="container">
-            <div className="card">
-                <div className="card-body">
-                    <h5 className="card-title">{cardTitle}</h5>
-                    <div className="row">
-                        <div className="col-md-4 monty-hall-button-col">
-                            <button className="btn btn-primary btn-block" onClick={selectBoxOne} disabled={oneDisabled}><br /><br /><span className="monty-hall-button-text">{oneText}</span><br /><br /><br /></button>
-                        </div>
-                        <div className="col-md-4 monty-hall-button-col">
-                            <button className="btn btn-primary btn-block" onClick={selectBoxTwo} disabled={twoDisabled}><br /><br /><span className="monty-hall-button-text">{twoText}</span><br /><br /><br /></button>
-                        </div>
-                        <div className="col-md-4 monty-hall-button-col">
-                            <button className="btn btn-primary btn-block" onClick={selectBoxThree} disabled={threeDisabled}><br /><br /><span className="monty-hall-button-text">{threeText}</span><br /><br /><br /></button>
-                        </div>
-                    </div>
-                    <br />
-                    <div className="row">
-                        <div className="col-md-2">
-                            Wins: {wins}
-                        </div>
-                        <div className="col-md-2">
-                            Losses: {losses}
-                        </div>
-                        <div className="col-md-2">
-                            Win %: {winPercentage()}%
-                        </div>
-                    </div>
-                    {playAgain()}
-                </div>
-                
-            </div>
-        </div>
+		<div className="card">
+			<div className="card-body">
+				<h5 className="card-title">{cardTitle}</h5>
+				<div className="row">
+					<div className="col-md-4 monty-hall-button-col">
+						<button className="btn btn-primary btn-block" onClick={selectBoxOne} disabled={oneDisabled}><br /><br /><span className="monty-hall-button-text">{oneText}</span><br /><br /><br /></button>
+					</div>
+					<div className="col-md-4 monty-hall-button-col">
+						<button className="btn btn-primary btn-block" onClick={selectBoxTwo} disabled={twoDisabled}><br /><br /><span className="monty-hall-button-text">{twoText}</span><br /><br /><br /></button>
+					</div>
+					<div className="col-md-4 monty-hall-button-col">
+						<button className="btn btn-primary btn-block" onClick={selectBoxThree} disabled={threeDisabled}><br /><br /><span className="monty-hall-button-text">{threeText}</span><br /><br /><br /></button>
+					</div>
+				</div>
+				<br />
+				<div className="row">
+					<div className="col-md-2">
+						Wins: {wins}
+					</div>
+					<div className="col-md-2">
+						Losses: {losses}
+					</div>
+					<div className="col-md-2">
+						Win %: {winPercentage()}%
+					</div>
+				</div>
+				{playAgain()}
+			</div>
+			
+		</div>
     )
 }
 

@@ -10,6 +10,9 @@ function FavoriteLinks() {
             <h3>Connor's Favorite Links</h3>
             <hr />
             <ul className="favorite-links-ul">
+				<li>
+					<a href="https://soback.connoryager.com/" target="_blank" rel="noreferrer">We're so back game <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+				</li>
                 <li>
                     <a href="https://www.reddit.com/r/UVA/comments/wtmgwr/from_2000_feet_above_grounds/?utm_source=share&utm_medium=ios_app&utm_name=iossmf" target="_blank" rel="noreferrer">View from 2000 feet above UVA  <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                 </li>
