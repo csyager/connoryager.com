@@ -43,6 +43,16 @@ export default function HighlightedProjects() {
                 </div>
             </div>
             <div className="row" data-masonry='{"percentPosition": true, "horizontalOrder": true}'>
+				<div className="col-12 col-lg-6 mb-3">
+					<HighlightedProjectEntry
+						date="2026"
+						title="Multiplayer Pong Game"
+						text="Server and TUI client for playing Pong with friends."
+					>
+						<HighlightedProjectEntryButton to="projects/pong">Article</HighlightedProjectEntryButton>
+						<HighlightedProjectEntryButton to="https://github.com/csyager/pong" external>Source code</HighlightedProjectEntryButton>
+					</HighlightedProjectEntry>
+				</div>
                 <div className="col-12 col-lg-6 mb-3">
                     <HighlightedProjectEntry
                         date="2024"

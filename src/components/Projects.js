@@ -19,7 +19,8 @@ import {
     RtxStockBotProject,
     TennisMLProject,
     Powerranks,
-    SoBack
+    SoBack,
+	Pong
   } from "./projects/Projects";
 
 
@@ -28,6 +29,8 @@ function ProjectsIndex() {
         <div className="container">
             <h1 className="display-4">Projects</h1>
             <div className="card-columns">
+				<Card image="" title="Multiplayer Pong Game" filename='pong' date="May 9, 2026"
+					text="Server and TUI client for playing Pong with friends" />
                 <Card image={MoodMeter} title="We're So Back - A mood-sharing web application" filename='soback' date="Jun 3, 2024"
                     text="React and AWS SAM web application for sharing your mood with friends" />
                 <Card image="" title="Socket-Based Chat Server on Raspberry Pi" filename='chatserver' date="May 30, 2024"
@@ -69,6 +72,7 @@ export default function Projects(props) {
     return (
         <Routes>
             <Route index element={<ProjectsIndex />} />
+			<Route path="pong" element={<ProjectLayout darkMode={props.darkMode}><Pong /></ProjectLayout>} />
             <Route path="stopmotion" element={<ProjectLayout darkMode={props.darkMode}><StopMotionProject /></ProjectLayout>} />
             <Route path="stspaper" element={<ProjectLayout darkMode={props.darkMode}><STSPaperProject /></ProjectLayout>} />
             <Route path="powerofdifference" element={<ProjectLayout darkMode={props.darkMode}><PowerOfDifferenceProject/></ProjectLayout>} />

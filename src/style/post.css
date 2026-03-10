@@ -31,7 +31,6 @@ img.post-img-bordered {
 }
 
 figcaption.figure-caption {
-  display: table-caption;
   caption-side: bottom;
   padding-top: 15px;
 }

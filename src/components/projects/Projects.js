@@ -6,6 +6,7 @@ import STSPaperProject from "./STSPaper";
 import TennisMLProject from "./TennisML";
 import ChatServer from "./ChatServer";
 import SoBack from "./SoBack";
+import Pong from "./Pong";
 
 export {
     PowerOfDifferenceProject,
@@ -15,5 +16,6 @@ export {
     STSPaperProject,
     TennisMLProject,
     ChatServer,
-    SoBack
+    SoBack,
+	Pong
 }
